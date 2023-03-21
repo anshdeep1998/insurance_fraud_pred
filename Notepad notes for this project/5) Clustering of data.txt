@@ -1,0 +1,17 @@
+After our preprocessing job is complete, our next job is to do clustering of data.
+
+Why we divide data into different clusters and train separate model for each is explained well in the register notes for this project that
+R1+R2 > R where R means residual score for complete data and R1 and R2 are for each cluster.
+
+we are going to use Kmeans in this project to cluster the data and to select optimal K i.e. no. of clusters, we ue elbow method and kneeLocator.
+
+Focus comes back to the trainModel.py file from the 2nd half of the trainModel() method.
+All clustering functions used here, their ctrl+click takes us to the clustering.py file in the data_preprocesing folder in root dir.
+
+All functions for clustering explained there and ctrl+click for details.
+
+We have also saved the clustered data and model bcoz:
+
+            """We are saving the clustered data and model bcoz later on when new data records from client comes to us,
+               model will help us classify that new records/rows into clusters we made just now so that we can apply
+               specific model to these clusters.""" 

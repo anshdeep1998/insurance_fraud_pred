@@ -1,0 +1,23 @@
+Summary for prev:
+
+1) in training_Validation_Insertion.py file, we had this class train_validation in which we initialized objects of 2 classes and the 1st
+object of 1st class was self.raw_data = Raw_Data_validation(path) i.e. object of Raw_Data_validation class of the rawValidation.py file which has following functions to validate the training data sent in batches by the client.
+
+-> valuesFromSchema to return no. of columns, names of columns, their lengths etc. from schema
+-> manualRegexCreation to check names of training data batch files are according to correct name format as per regex.
+-> validationFileNameRaw check names of training data batch files again but this time for length of date and time in the name of each file.
+-> validateColumnLength to validate lengths of each column.
+-> validateMissingValuesInWholeColumn to check if any column is there having all values as null
+-> replaceMissingWithNull to replace missing empty values with string "Null" and replace '' with "".
+->deleteExistingGoodDataTrainingFolder to delete existing good data folder bcoz after shifting good validated data to database,
+                                            we delete that folder
+-> similarly we have deleteExistingBadDataTrainingFolder function in rawValidation.py file to delete existing bad data folder bcoz we 
+   transfer bad data which failed validation conditions into an archive folder and delete existing bad data folder.
+
+->moveBadFilesToArchiveBad() to send bad data which failed validation conditions into an archive folder.
+
+2) in DataTypeValidation.py file, we have class named dBOperations which has following functions mainly to deal with the database:
+
+->createTableDb to create a table in sqllite database to club and store all csv batch files data.
+->insertIntoTableGoodData to insert all good data which passed the validation conditions into database.
+->selectingDatafromtableintocsv to save all the data which was clubbed into the database as csv.

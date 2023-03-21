@@ -1,0 +1,27 @@
+Now we have all the clubbed data from database saved into the InputFile.csv file inside the Training_FileFromDB folder inside the root directory.
+
+Our next goal is to perform data preprocessing on this whole clubbed csv data.
+
+The way we had begun the explanation of this project from the main.py file in which we began explanation of trainRouteClient() function
+which had objects initialized of train_validation class and calling the train_validation() function of train_validation class completes
+the whole validation and the whole train_validation class was explained in the training_Validation_Insertion.py file and we can go through
+the explanation by ctrl+click.
+
+Similarly in this same function trainRouteClient() in the main.py, we have object initialization of trainModel() class whose method
+trainingModel() is called. Ctrl+click takes us to the trainingModel.py file in the data_preprocessinf folder in the root dir which has class trainModel() which has all the preprocessing
+or the feature engineering steps after which model training also done in this same class.
+
+Before the feature engineering explanation detail, we will go through the EDA graphs, bcoz all preprocessing steps are decided as per the
+EDA.
+
+EDA done in jupter file EDA_fraudDetection.ipynb in the EDA folder of the root directory of this project.
+Open this jupyter file and each and every explanation is given very well there.
+
+explanation of whole preprocessing and EDA given in this jupyter and as of now just go through jupyter code only till end of EDA part
+and stop when the title model selection and tuning beguns.
+
+All the above jupyter code will be now implementes in the trainModel class in the trainingModel.py
+
+Now the focus comes to the trainingModel.py file which has class trainModel which has only 1 function trainingModel() which first reads 
+the csv file and does preprocessing. Go through each and every function there along with it's comments and ctrl+click.
+For the logging of this file, we have selected file ModelTrainingLog.txt from the Training_logs folder of the root directory of this project.

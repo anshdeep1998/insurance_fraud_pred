@@ -1,0 +1,12 @@
+Focus is again in the trainingModel.py file i.e. the 3rd part of this file where this below comment is written:
+"""parsing all the clusters and looking for the best ML algorithm to fit on individual cluster""".
+
+Now our job is to select and tune the best model for each cluster.
+
+All the functions implemented there in continuation itself, just look at the comments there which will explain we loop through each and every cluster here and how data split and preparedfor training the model. 
+
+Here object of Preprocessor class in preprocessing.py in data_preprocessing folder in root dir used to scale the numerical data using it's scale_numerical_columns method.
+
+Then object of Model_Finder class of tuner.py in the best_model_finder folder in root dir also used to select best tuned model using it's get_best_model() method.
+
+Another object of class File_Operation() from file_methods.py in the file_operations folder in root dir used to save models in the specific directory using it's .save_model() method.

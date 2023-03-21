@@ -1,0 +1,1035 @@
+2020-02-15/17:34:20		Start of Validation on files for prediction!!
+2020-02-15/17:34:20		Raw Data Validation Complete!!
+2020-02-15/17:34:20		Starting Data Transforamtion!!
+2020-02-15/17:34:21		DataTransformation Completed!!!
+2020-02-15/17:34:21		Creating Prediction_Database and tables on the basis of given schema!!!
+2020-02-15/17:34:25		Table creation Completed!!
+2020-02-15/17:34:25		Insertion of Data into Table started!!!!
+2020-02-15/17:35:36		Insertion in Table completed!!!
+2020-02-15/17:35:36		Deleting Good Data Folder!!!
+2020-02-15/17:35:36		Good_Data folder deleted!!!
+2020-02-15/17:35:36		Moving bad files to Archive and deleting Bad_Data folder!!!
+2020-02-15/17:35:36		Bad files moved to archive!! Bad folder Deleted!!
+2020-02-15/17:35:36		Validation Operation completed!!
+2020-02-15/17:35:36		Extracting csv file from table
+2020-02-15/17:37:04		Start of Prediction
+2020-02-15/17:37:04		Entered the get_data method of the Data_Getter class
+2020-02-15/17:37:04		Data Load Successful.Exited the get_data method of the Data_Getter class
+2020-02-15/17:37:04		Entered the remove_columns method of the Preprocessor class
+2020-02-15/17:37:04		Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2020-02-15/17:37:04		Entered the is_null_present method of the Preprocessor class
+2020-02-15/17:37:04		Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2020-02-15/17:37:04		Entered the impute_missing_values method of the Preprocessor class
+2020-02-15/17:37:04		Imputing missing values Successful. Exited the impute_missing_values method of the Preprocessor class
+2020-02-15/17:37:07		Entered the encode_categorical_columns method of the Preprocessor class
+2020-02-15/17:37:07		encoding for categorical values successful. Exited the encode_categorical_columns method of the Preprocessor class
+2020-02-15/17:37:10		Entered the scale_numerical_columns method of the Preprocessor class
+2020-02-15/17:37:20		scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2020-02-15/17:37:24		Entered the load_model method of the File_Operation class
+2020-02-15/17:37:24		Model File KMeans loaded. Exited the load_model method of the Model_Finder class
+2020-02-15/17:37:29		Entered the find_correct_model_file method of the File_Operation class
+2020-02-15/17:37:29		Exited the find_correct_model_file method of the Model_Finder class.
+2020-02-15/17:37:30		Entered the load_model method of the File_Operation class
+2020-02-15/17:37:30		Model File XGBoost0 loaded. Exited the load_model method of the Model_Finder class
+2020-02-15/17:37:41		End of Prediction
+2020-04-13/15:26:22		Start of Prediction
+2020-04-13/15:26:22		Entered the get_data method of the Data_Getter class
+2020-04-13/15:26:22		Data Load Successful.Exited the get_data method of the Data_Getter class
+2020-04-13/15:26:22		Entered the remove_columns method of the Preprocessor class
+2020-04-13/15:26:22		Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2020-04-13/15:26:22		Entered the is_null_present method of the Preprocessor class
+2020-04-13/15:26:22		Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2020-04-13/15:26:22		Entered the impute_missing_values method of the Preprocessor class
+2020-04-13/15:26:22		Imputing missing values Successful. Exited the impute_missing_values method of the Preprocessor class
+2020-04-13/15:26:22		Entered the encode_categorical_columns method of the Preprocessor class
+2020-04-13/15:26:22		encoding for categorical values successful. Exited the encode_categorical_columns method of the Preprocessor class
+2020-04-13/15:26:22		Entered the scale_numerical_columns method of the Preprocessor class
+2020-04-13/15:26:22		scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2020-04-13/15:26:22		Entered the load_model method of the File_Operation class
+2020-04-13/15:26:22		Model File KMeans loaded. Exited the load_model method of the Model_Finder class
+2020-04-13/15:26:22		Entered the find_correct_model_file method of the File_Operation class
+2020-04-13/15:26:22		Exited the find_correct_model_file method of the Model_Finder class.
+2020-04-13/15:26:22		Entered the load_model method of the File_Operation class
+2020-04-13/15:26:22		Model File XGBoost0 loaded. Exited the load_model method of the Model_Finder class
+2020-04-13/15:26:22		End of Prediction
+2023-03-14/23:29:45		Start of Validation on files for prediction!!
+2023-03-14/23:29:46		Raw Data Validation Complete!!
+2023-03-14/23:29:46		Starting Data Transforamtion!!
+2023-03-14/23:29:46		DataTransformation Completed!!!
+2023-03-14/23:29:46		Creating Prediction_Database and tables on the basis of given schema!!!
+2023-03-14/23:29:47		Table creation Completed!!
+2023-03-14/23:29:47		Insertion of Data into Table started!!!!
+2023-03-14/23:30:00		Insertion in Table completed!!!
+2023-03-14/23:30:00		Deleting Good Data Folder!!!
+2023-03-14/23:30:00		Good_Data folder deleted!!!
+2023-03-14/23:30:00		Moving bad files to Archive and deleting Bad_Data folder!!!
+2023-03-14/23:30:00		Bad files moved to archive!! Bad folder Deleted!!
+2023-03-14/23:30:00		Validation Operation completed!!
+2023-03-14/23:30:00		Extracting csv file from table
+2023-03-14/23:30:00		Start of Prediction
+2023-03-14/23:30:00		Entered the get_data method of the Data_Getter class
+2023-03-14/23:30:00		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-14/23:30:00		Entered the remove_columns method of the Preprocessor class
+2023-03-14/23:30:00		Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2023-03-14/23:30:00		Entered the is_null_present method of the Preprocessor class
+2023-03-14/23:30:01		Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2023-03-14/23:30:01		Entered the impute_missing_values method of the Preprocessor class
+2023-03-14/23:30:01		Exception occured in impute_missing_values method of the Preprocessor class. Exception message:  X must be a numpy array or pandas dataframe. Got <class 'pandas.core.series.Series'> instead.
+2023-03-14/23:30:01		Imputing missing values failed. Exited the impute_missing_values method of the Preprocessor class
+2023-03-14/23:30:01		Error occured while running the prediction!! Error:: 
+2023-03-14/23:30:12		Start of Validation on files for prediction!!
+2023-03-14/23:30:16		Start of Validation on files for prediction!!
+2023-03-14/23:30:16		Raw Data Validation Complete!!
+2023-03-14/23:30:16		Starting Data Transforamtion!!
+2023-03-14/23:30:17		DataTransformation Completed!!!
+2023-03-14/23:30:17		Creating Prediction_Database and tables on the basis of given schema!!!
+2023-03-14/23:30:17		Table creation Completed!!
+2023-03-14/23:30:17		Insertion of Data into Table started!!!!
+2023-03-14/23:30:26		Insertion in Table completed!!!
+2023-03-14/23:30:26		Deleting Good Data Folder!!!
+2023-03-14/23:30:26		Good_Data folder deleted!!!
+2023-03-14/23:30:26		Moving bad files to Archive and deleting Bad_Data folder!!!
+2023-03-14/23:30:26		Bad files moved to archive!! Bad folder Deleted!!
+2023-03-14/23:30:26		Validation Operation completed!!
+2023-03-14/23:30:26		Extracting csv file from table
+2023-03-14/23:30:26		Start of Prediction
+2023-03-14/23:30:26		Entered the get_data method of the Data_Getter class
+2023-03-14/23:30:26		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-14/23:30:26		Entered the remove_columns method of the Preprocessor class
+2023-03-14/23:30:26		Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2023-03-14/23:30:26		Entered the is_null_present method of the Preprocessor class
+2023-03-14/23:30:26		Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2023-03-14/23:30:26		Entered the impute_missing_values method of the Preprocessor class
+2023-03-14/23:30:26		Exception occured in impute_missing_values method of the Preprocessor class. Exception message:  X must be a numpy array or pandas dataframe. Got <class 'pandas.core.series.Series'> instead.
+2023-03-14/23:30:26		Imputing missing values failed. Exited the impute_missing_values method of the Preprocessor class
+2023-03-14/23:30:26		Error occured while running the prediction!! Error:: 
+2023-03-14/23:48:04		Start of Validation on files for prediction!!
+2023-03-14/23:48:04		Raw Data Validation Complete!!
+2023-03-14/23:48:04		Starting Data Transforamtion!!
+2023-03-14/23:48:05		DataTransformation Completed!!!
+2023-03-14/23:48:05		Creating Prediction_Database and tables on the basis of given schema!!!
+2023-03-14/23:48:05		Table creation Completed!!
+2023-03-14/23:48:05		Insertion of Data into Table started!!!!
+2023-03-14/23:48:09		Insertion in Table completed!!!
+2023-03-14/23:48:09		Deleting Good Data Folder!!!
+2023-03-14/23:48:09		Good_Data folder deleted!!!
+2023-03-14/23:48:09		Moving bad files to Archive and deleting Bad_Data folder!!!
+2023-03-14/23:48:09		Bad files moved to archive!! Bad folder Deleted!!
+2023-03-14/23:48:09		Validation Operation completed!!
+2023-03-14/23:48:09		Extracting csv file from table
+2023-03-14/23:48:09		Start of Prediction
+2023-03-14/23:48:09		Entered the get_data method of the Data_Getter class
+2023-03-14/23:48:09		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-14/23:48:09		Entered the remove_columns method of the Preprocessor class
+2023-03-14/23:48:09		Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2023-03-14/23:48:09		Entered the is_null_present method of the Preprocessor class
+2023-03-14/23:48:09		Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2023-03-14/23:48:09		Entered the impute_missing_values method of the Preprocessor class
+2023-03-14/23:48:09		Exception occured in impute_missing_values method of the Preprocessor class. Exception message:  X must be a numpy array or pandas dataframe. Got <class 'pandas.core.series.Series'> instead.
+2023-03-14/23:48:09		Imputing missing values failed. Exited the impute_missing_values method of the Preprocessor class
+2023-03-14/23:48:09		Error occured while running the prediction!! Error:: 
+2023-03-14/23:51:27		Start of Validation on files for prediction!!
+2023-03-14/23:51:27		Raw Data Validation Complete!!
+2023-03-14/23:51:27		Starting Data Transforamtion!!
+2023-03-14/23:51:27		DataTransformation Completed!!!
+2023-03-14/23:51:27		Creating Prediction_Database and tables on the basis of given schema!!!
+2023-03-14/23:51:28		Table creation Completed!!
+2023-03-14/23:51:28		Insertion of Data into Table started!!!!
+2023-03-14/23:51:32		Insertion in Table completed!!!
+2023-03-14/23:51:32		Deleting Good Data Folder!!!
+2023-03-14/23:51:32		Good_Data folder deleted!!!
+2023-03-14/23:51:32		Moving bad files to Archive and deleting Bad_Data folder!!!
+2023-03-14/23:51:32		Bad files moved to archive!! Bad folder Deleted!!
+2023-03-14/23:51:32		Validation Operation completed!!
+2023-03-14/23:51:32		Extracting csv file from table
+2023-03-14/23:51:32		Start of Prediction
+2023-03-14/23:51:32		Entered the get_data method of the Data_Getter class
+2023-03-14/23:51:32		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-14/23:51:32		Entered the remove_columns method of the Preprocessor class
+2023-03-14/23:51:32		Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2023-03-14/23:51:32		Entered the is_null_present method of the Preprocessor class
+2023-03-14/23:51:32		Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2023-03-14/23:51:32		Entered the impute_missing_values method of the Preprocessor class
+2023-03-14/23:51:32		Exception occured in impute_missing_values method of the Preprocessor class. Exception message:  X must be a numpy array or pandas dataframe. Got <class 'pandas.core.series.Series'> instead.
+2023-03-14/23:51:32		Imputing missing values failed. Exited the impute_missing_values method of the Preprocessor class
+2023-03-14/23:51:32		Error occured while running the prediction!! Error:: 
+2023-03-14/23:51:36		Start of Validation on files for prediction!!
+2023-03-14/23:51:38		Start of Validation on files for prediction!!
+2023-03-14/23:51:49		Start of Validation on files for prediction!!
+2023-03-14/23:51:53		Start of Validation on files for prediction!!
+2023-03-14/23:51:54		Start of Validation on files for prediction!!
+2023-03-14/23:51:55		Start of Validation on files for prediction!!
+2023-03-14/23:51:55		Raw Data Validation Complete!!
+2023-03-14/23:51:55		Starting Data Transforamtion!!
+2023-03-14/23:51:55		DataTransformation Completed!!!
+2023-03-14/23:51:55		Creating Prediction_Database and tables on the basis of given schema!!!
+2023-03-14/23:51:56		Table creation Completed!!
+2023-03-14/23:51:56		Insertion of Data into Table started!!!!
+2023-03-14/23:52:01		Insertion in Table completed!!!
+2023-03-14/23:52:01		Deleting Good Data Folder!!!
+2023-03-14/23:52:01		Good_Data folder deleted!!!
+2023-03-14/23:52:01		Moving bad files to Archive and deleting Bad_Data folder!!!
+2023-03-14/23:52:01		Bad files moved to archive!! Bad folder Deleted!!
+2023-03-14/23:52:01		Validation Operation completed!!
+2023-03-14/23:52:01		Extracting csv file from table
+2023-03-14/23:52:01		Start of Prediction
+2023-03-14/23:52:01		Entered the get_data method of the Data_Getter class
+2023-03-14/23:52:01		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-14/23:52:01		Entered the remove_columns method of the Preprocessor class
+2023-03-14/23:52:01		Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2023-03-14/23:52:01		Entered the is_null_present method of the Preprocessor class
+2023-03-14/23:52:01		Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2023-03-14/23:52:01		Entered the impute_missing_values method of the Preprocessor class
+2023-03-14/23:52:01		Exception occured in impute_missing_values method of the Preprocessor class. Exception message:  X must be a numpy array or pandas dataframe. Got <class 'pandas.core.series.Series'> instead.
+2023-03-14/23:52:01		Imputing missing values failed. Exited the impute_missing_values method of the Preprocessor class
+2023-03-14/23:52:01		Error occured while running the prediction!! Error:: 
+2023-03-14/23:57:41		Start of Validation on files for prediction!!
+2023-03-14/23:57:42		Raw Data Validation Complete!!
+2023-03-14/23:57:42		Starting Data Transforamtion!!
+2023-03-14/23:57:42		DataTransformation Completed!!!
+2023-03-14/23:57:42		Creating Prediction_Database and tables on the basis of given schema!!!
+2023-03-14/23:57:42		Table creation Completed!!
+2023-03-14/23:57:42		Insertion of Data into Table started!!!!
+2023-03-14/23:57:49		Insertion in Table completed!!!
+2023-03-14/23:57:49		Deleting Good Data Folder!!!
+2023-03-14/23:57:49		Good_Data folder deleted!!!
+2023-03-14/23:57:49		Moving bad files to Archive and deleting Bad_Data folder!!!
+2023-03-14/23:57:49		Bad files moved to archive!! Bad folder Deleted!!
+2023-03-14/23:57:49		Validation Operation completed!!
+2023-03-14/23:57:49		Extracting csv file from table
+2023-03-14/23:57:49		Start of Prediction
+2023-03-14/23:57:49		Entered the get_data method of the Data_Getter class
+2023-03-14/23:57:49		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-14/23:57:49		Entered the remove_columns method of the Preprocessor class
+2023-03-14/23:57:49		Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2023-03-14/23:57:49		Entered the is_null_present method of the Preprocessor class
+2023-03-14/23:57:49		Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2023-03-14/23:57:49		Entered the impute_missing_values method of the Preprocessor class
+2023-03-14/23:57:49		Exception occured in impute_missing_values method of the Preprocessor class. Exception message:  X must be a numpy array or pandas dataframe. Got <class 'pandas.core.series.Series'> instead.
+2023-03-14/23:57:49		Imputing missing values failed. Exited the impute_missing_values method of the Preprocessor class
+2023-03-14/23:57:49		Error occured while running the prediction!! Error:: 
+2023-03-14/23:58:09		Start of Validation on files for prediction!!
+2023-03-14/23:58:09		Raw Data Validation Complete!!
+2023-03-14/23:58:09		Starting Data Transforamtion!!
+2023-03-14/23:58:09		DataTransformation Completed!!!
+2023-03-14/23:58:09		Creating Prediction_Database and tables on the basis of given schema!!!
+2023-03-14/23:58:09		Table creation Completed!!
+2023-03-14/23:58:09		Insertion of Data into Table started!!!!
+2023-03-14/23:58:16		Insertion in Table completed!!!
+2023-03-14/23:58:16		Deleting Good Data Folder!!!
+2023-03-14/23:58:16		Good_Data folder deleted!!!
+2023-03-14/23:58:16		Moving bad files to Archive and deleting Bad_Data folder!!!
+2023-03-14/23:58:16		Bad files moved to archive!! Bad folder Deleted!!
+2023-03-14/23:58:16		Validation Operation completed!!
+2023-03-14/23:58:16		Extracting csv file from table
+2023-03-14/23:58:16		Start of Prediction
+2023-03-14/23:58:16		Entered the get_data method of the Data_Getter class
+2023-03-14/23:58:16		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-14/23:58:16		Entered the remove_columns method of the Preprocessor class
+2023-03-14/23:58:16		Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2023-03-14/23:58:16		Entered the is_null_present method of the Preprocessor class
+2023-03-14/23:58:16		Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2023-03-14/23:58:16		Entered the impute_missing_values method of the Preprocessor class
+2023-03-14/23:58:16		Exception occured in impute_missing_values method of the Preprocessor class. Exception message:  X must be a numpy array or pandas dataframe. Got <class 'pandas.core.series.Series'> instead.
+2023-03-14/23:58:16		Imputing missing values failed. Exited the impute_missing_values method of the Preprocessor class
+2023-03-14/23:58:16		Error occured while running the prediction!! Error:: 
+2023-03-15/21:47:39		Start of Validation on files for prediction!!
+2023-03-15/21:47:39		Raw Data Validation Complete!!
+2023-03-15/21:47:39		Starting Data Transforamtion!!
+2023-03-15/21:47:39		DataTransformation Completed!!!
+2023-03-15/21:47:39		Creating Prediction_Database and tables on the basis of given schema!!!
+2023-03-15/21:47:39		Table creation Completed!!
+2023-03-15/21:47:39		Insertion of Data into Table started!!!!
+2023-03-15/21:47:44		Insertion in Table completed!!!
+2023-03-15/21:47:44		Deleting Good Data Folder!!!
+2023-03-15/21:47:44		Good_Data folder deleted!!!
+2023-03-15/21:47:44		Moving bad files to Archive and deleting Bad_Data folder!!!
+2023-03-15/21:47:44		Bad files moved to archive!! Bad folder Deleted!!
+2023-03-15/21:47:44		Validation Operation completed!!
+2023-03-15/21:47:44		Extracting csv file from table
+2023-03-15/21:47:44		Start of Prediction
+2023-03-15/21:47:44		Entered the get_data method of the Data_Getter class
+2023-03-15/21:47:44		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-15/21:47:44		Entered the remove_columns method of the Preprocessor class
+2023-03-15/21:47:44		Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2023-03-15/21:47:44		Entered the is_null_present method of the Preprocessor class
+2023-03-15/21:47:44		Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2023-03-15/21:47:44		Entered the impute_missing_values method of the Preprocessor class
+2023-03-15/21:47:44		Exception occured in impute_missing_values method of the Preprocessor class. Exception message:  X must be a numpy array or pandas dataframe. Got <class 'pandas.core.series.Series'> instead.
+2023-03-15/21:47:44		Imputing missing values failed. Exited the impute_missing_values method of the Preprocessor class
+2023-03-15/21:47:44		Error occured while running the prediction!! Error:: 
+2023-03-19/13:07:48		Start of Validation on files for prediction!!
+2023-03-19/13:07:48		Raw Data Validation Complete!!
+2023-03-19/13:07:48		Starting Data Transforamtion!!
+2023-03-19/13:07:48		DataTransformation Completed!!!
+2023-03-19/13:07:48		Creating Prediction_Database and tables on the basis of given schema!!!
+2023-03-19/13:07:48		Table creation Completed!!
+2023-03-19/13:07:48		Insertion of Data into Table started!!!!
+2023-03-19/13:07:52		Insertion in Table completed!!!
+2023-03-19/13:07:52		Deleting Good Data Folder!!!
+2023-03-19/13:07:52		Good_Data folder deleted!!!
+2023-03-19/13:07:52		Moving bad files to Archive and deleting Bad_Data folder!!!
+2023-03-19/13:07:52		Bad files moved to archive!! Bad folder Deleted!!
+2023-03-19/13:07:52		Validation Operation completed!!
+2023-03-19/13:07:52		Extracting csv file from table
+2023-03-19/13:12:31		Start of Validation on files for prediction!!
+2023-03-19/13:12:31		Raw Data Validation Complete!!
+2023-03-19/13:12:31		Starting Data Transforamtion!!
+2023-03-19/13:12:31		DataTransformation Completed!!!
+2023-03-19/13:12:31		Creating Prediction_Database and tables on the basis of given schema!!!
+2023-03-19/13:12:31		Table creation Completed!!
+2023-03-19/13:12:31		Insertion of Data into Table started!!!!
+2023-03-19/13:12:34		Insertion in Table completed!!!
+2023-03-19/13:12:34		Deleting Good Data Folder!!!
+2023-03-19/13:12:34		Good_Data folder deleted!!!
+2023-03-19/13:12:34		Moving bad files to Archive and deleting Bad_Data folder!!!
+2023-03-19/13:12:34		Bad files moved to archive!! Bad folder Deleted!!
+2023-03-19/13:12:34		Validation Operation completed!!
+2023-03-19/13:12:34		Extracting csv file from table
+2023-03-19/13:12:34		Start of Validation on files for prediction!!
+2023-03-19/13:12:34		Raw Data Validation Complete!!
+2023-03-19/13:12:34		Starting Data Transforamtion!!
+2023-03-19/13:12:34		DataTransformation Completed!!!
+2023-03-19/13:12:34		Creating Prediction_Database and tables on the basis of given schema!!!
+2023-03-19/13:12:35		Table creation Completed!!
+2023-03-19/13:12:35		Insertion of Data into Table started!!!!
+2023-03-19/13:12:38		Insertion in Table completed!!!
+2023-03-19/13:12:38		Deleting Good Data Folder!!!
+2023-03-19/13:12:38		Good_Data folder deleted!!!
+2023-03-19/13:12:38		Moving bad files to Archive and deleting Bad_Data folder!!!
+2023-03-19/13:12:38		Bad files moved to archive!! Bad folder Deleted!!
+2023-03-19/13:12:38		Validation Operation completed!!
+2023-03-19/13:12:38		Extracting csv file from table
+2023-03-19/13:14:36		Start of Validation on files for prediction!!
+2023-03-19/13:14:36		Raw Data Validation Complete!!
+2023-03-19/13:14:36		Starting Data Transforamtion!!
+2023-03-19/13:14:36		DataTransformation Completed!!!
+2023-03-19/13:14:36		Creating Prediction_Database and tables on the basis of given schema!!!
+2023-03-19/13:14:37		Table creation Completed!!
+2023-03-19/13:14:37		Insertion of Data into Table started!!!!
+2023-03-19/13:14:40		Insertion in Table completed!!!
+2023-03-19/13:14:40		Deleting Good Data Folder!!!
+2023-03-19/13:14:40		Good_Data folder deleted!!!
+2023-03-19/13:14:40		Moving bad files to Archive and deleting Bad_Data folder!!!
+2023-03-19/13:14:40		Bad files moved to archive!! Bad folder Deleted!!
+2023-03-19/13:14:40		Validation Operation completed!!
+2023-03-19/13:14:40		Extracting csv file from table
+2023-03-19/13:14:40		Start of Prediction
+2023-03-19/13:14:40		Entered the get_data method of the Data_Getter class
+2023-03-19/13:14:40		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-19/13:14:40		Entered the remove_columns method of the Preprocessor class
+2023-03-19/13:14:40		Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2023-03-19/13:14:40		Entered the is_null_present method of the Preprocessor class
+2023-03-19/13:14:40		Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2023-03-19/13:14:40		Entered the impute_missing_values method of the Preprocessor class
+2023-03-19/13:14:40		Imputing missing values Successful. Exited the impute_missing_values method of the Preprocessor class
+2023-03-19/13:14:40		Entered the encode_categorical_columns method of the Preprocessor class
+2023-03-19/13:14:40		encoding for categorical values successful. Exited the encode_categorical_columns method of the Preprocessor class
+2023-03-19/13:14:40		Entered the scale_numerical_columns method of the Preprocessor class
+2023-03-19/13:14:40		scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2023-03-19/13:14:40		Entered the load_model method of the File_Operation class
+2023-03-19/13:14:40		Model File KMeans loaded. Exited the load_model method of the Model_Finder class
+2023-03-19/13:14:40		Error occured while running the prediction!! Error:: The feature names should match those that were passed during fit.
+Feature names must be in the same order as they were in fit.
+
+2023-03-19/13:15:15		Start of Validation on files for prediction!!
+2023-03-19/13:15:15		Raw Data Validation Complete!!
+2023-03-19/13:15:15		Starting Data Transforamtion!!
+2023-03-19/13:15:15		DataTransformation Completed!!!
+2023-03-19/13:15:15		Creating Prediction_Database and tables on the basis of given schema!!!
+2023-03-19/13:15:15		Table creation Completed!!
+2023-03-19/13:15:15		Insertion of Data into Table started!!!!
+2023-03-19/13:15:18		Insertion in Table completed!!!
+2023-03-19/13:15:18		Deleting Good Data Folder!!!
+2023-03-19/13:15:18		Good_Data folder deleted!!!
+2023-03-19/13:15:18		Moving bad files to Archive and deleting Bad_Data folder!!!
+2023-03-19/13:15:18		Bad files moved to archive!! Bad folder Deleted!!
+2023-03-19/13:15:18		Validation Operation completed!!
+2023-03-19/13:15:18		Extracting csv file from table
+2023-03-19/13:15:28		Start of Validation on files for prediction!!
+2023-03-19/13:15:28		Raw Data Validation Complete!!
+2023-03-19/13:15:28		Starting Data Transforamtion!!
+2023-03-19/13:15:28		DataTransformation Completed!!!
+2023-03-19/13:15:28		Creating Prediction_Database and tables on the basis of given schema!!!
+2023-03-19/13:15:28		Table creation Completed!!
+2023-03-19/13:15:28		Insertion of Data into Table started!!!!
+2023-03-19/13:15:31		Insertion in Table completed!!!
+2023-03-19/13:15:31		Deleting Good Data Folder!!!
+2023-03-19/13:15:31		Good_Data folder deleted!!!
+2023-03-19/13:15:31		Moving bad files to Archive and deleting Bad_Data folder!!!
+2023-03-19/13:15:31		Bad files moved to archive!! Bad folder Deleted!!
+2023-03-19/13:15:31		Validation Operation completed!!
+2023-03-19/13:15:31		Extracting csv file from table
+2023-03-19/13:15:31		Start of Prediction
+2023-03-19/13:15:31		Entered the get_data method of the Data_Getter class
+2023-03-19/13:15:31		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-19/13:15:31		Entered the remove_columns method of the Preprocessor class
+2023-03-19/13:15:31		Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2023-03-19/13:15:31		Entered the is_null_present method of the Preprocessor class
+2023-03-19/13:15:31		Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2023-03-19/13:15:31		Entered the impute_missing_values method of the Preprocessor class
+2023-03-19/13:15:31		Imputing missing values Successful. Exited the impute_missing_values method of the Preprocessor class
+2023-03-19/13:15:31		Entered the encode_categorical_columns method of the Preprocessor class
+2023-03-19/13:15:31		encoding for categorical values successful. Exited the encode_categorical_columns method of the Preprocessor class
+2023-03-19/13:15:31		Entered the scale_numerical_columns method of the Preprocessor class
+2023-03-19/13:15:31		scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2023-03-19/13:15:31		Entered the load_model method of the File_Operation class
+2023-03-19/13:15:31		Model File KMeans loaded. Exited the load_model method of the Model_Finder class
+2023-03-19/13:15:31		Error occured while running the prediction!! Error:: The feature names should match those that were passed during fit.
+Feature names must be in the same order as they were in fit.
+
+2023-03-19/14:29:27		Start of Validation on files for prediction!!
+2023-03-19/14:29:27		Raw Data Validation Complete!!
+2023-03-19/14:29:27		Starting Data Transforamtion!!
+2023-03-19/14:29:27		DataTransformation Completed!!!
+2023-03-19/14:29:27		Creating Prediction_Database and tables on the basis of given schema!!!
+2023-03-19/14:29:27		Table creation Completed!!
+2023-03-19/14:29:27		Insertion of Data into Table started!!!!
+2023-03-19/14:29:31		Insertion in Table completed!!!
+2023-03-19/14:29:31		Deleting Good Data Folder!!!
+2023-03-19/14:29:31		Good_Data folder deleted!!!
+2023-03-19/14:29:31		Moving bad files to Archive and deleting Bad_Data folder!!!
+2023-03-19/14:29:31		Bad files moved to archive!! Bad folder Deleted!!
+2023-03-19/14:29:31		Validation Operation completed!!
+2023-03-19/14:29:31		Extracting csv file from table
+2023-03-19/14:29:31		Start of Prediction
+2023-03-19/14:29:31		Entered the get_data method of the Data_Getter class
+2023-03-19/14:29:31		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-19/14:29:31		Entered the remove_columns method of the Preprocessor class
+2023-03-19/14:29:31		Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2023-03-19/14:29:31		Entered the is_null_present method of the Preprocessor class
+2023-03-19/14:29:31		Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2023-03-19/14:29:31		Entered the impute_missing_values method of the Preprocessor class
+2023-03-19/14:29:31		Imputing missing values Successful. Exited the impute_missing_values method of the Preprocessor class
+2023-03-19/14:29:31		Entered the encode_categorical_columns method of the Preprocessor class
+2023-03-19/14:29:31		encoding for categorical values successful. Exited the encode_categorical_columns method of the Preprocessor class
+2023-03-19/14:29:31		Entered the scale_numerical_columns method of the Preprocessor class
+2023-03-19/14:29:31		scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2023-03-19/14:29:31		Entered the load_model method of the File_Operation class
+2023-03-19/14:29:31		Model File KMeans loaded. Exited the load_model method of the Model_Finder class
+2023-03-19/14:30:07		Start of Validation on files for prediction!!
+2023-03-19/14:30:07		Raw Data Validation Complete!!
+2023-03-19/14:30:07		Starting Data Transforamtion!!
+2023-03-19/14:30:07		DataTransformation Completed!!!
+2023-03-19/14:30:07		Creating Prediction_Database and tables on the basis of given schema!!!
+2023-03-19/14:30:07		Table creation Completed!!
+2023-03-19/14:30:07		Insertion of Data into Table started!!!!
+2023-03-19/14:30:10		Insertion in Table completed!!!
+2023-03-19/14:30:10		Deleting Good Data Folder!!!
+2023-03-19/14:30:10		Good_Data folder deleted!!!
+2023-03-19/14:30:10		Moving bad files to Archive and deleting Bad_Data folder!!!
+2023-03-19/14:30:10		Bad files moved to archive!! Bad folder Deleted!!
+2023-03-19/14:30:10		Validation Operation completed!!
+2023-03-19/14:30:10		Extracting csv file from table
+2023-03-19/14:30:10		Start of Prediction
+2023-03-19/14:30:10		Entered the get_data method of the Data_Getter class
+2023-03-19/14:30:10		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-19/14:30:10		Entered the remove_columns method of the Preprocessor class
+2023-03-19/14:30:10		Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2023-03-19/14:30:10		Entered the is_null_present method of the Preprocessor class
+2023-03-19/14:30:10		Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2023-03-19/14:30:10		Entered the impute_missing_values method of the Preprocessor class
+2023-03-19/14:30:10		Imputing missing values Successful. Exited the impute_missing_values method of the Preprocessor class
+2023-03-19/14:30:10		Entered the encode_categorical_columns method of the Preprocessor class
+2023-03-19/14:30:10		encoding for categorical values successful. Exited the encode_categorical_columns method of the Preprocessor class
+2023-03-19/14:30:10		Entered the scale_numerical_columns method of the Preprocessor class
+2023-03-19/14:30:10		scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2023-03-19/14:30:10		Entered the load_model method of the File_Operation class
+2023-03-19/14:30:10		Model File KMeans loaded. Exited the load_model method of the Model_Finder class
+2023-03-19/14:30:47		Start of Validation on files for prediction!!
+2023-03-19/14:30:48		Raw Data Validation Complete!!
+2023-03-19/14:30:48		Starting Data Transforamtion!!
+2023-03-19/14:30:48		DataTransformation Completed!!!
+2023-03-19/14:30:48		Creating Prediction_Database and tables on the basis of given schema!!!
+2023-03-19/14:30:48		Table creation Completed!!
+2023-03-19/14:30:48		Insertion of Data into Table started!!!!
+2023-03-19/14:30:51		Insertion in Table completed!!!
+2023-03-19/14:30:51		Deleting Good Data Folder!!!
+2023-03-19/14:30:51		Good_Data folder deleted!!!
+2023-03-19/14:30:51		Moving bad files to Archive and deleting Bad_Data folder!!!
+2023-03-19/14:30:51		Bad files moved to archive!! Bad folder Deleted!!
+2023-03-19/14:30:51		Validation Operation completed!!
+2023-03-19/14:30:51		Extracting csv file from table
+2023-03-19/14:30:51		Start of Prediction
+2023-03-19/14:30:51		Entered the get_data method of the Data_Getter class
+2023-03-19/14:30:51		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-19/14:30:51		Entered the remove_columns method of the Preprocessor class
+2023-03-19/14:30:51		Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2023-03-19/14:30:51		Entered the is_null_present method of the Preprocessor class
+2023-03-19/14:30:51		Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2023-03-19/14:30:51		Entered the impute_missing_values method of the Preprocessor class
+2023-03-19/14:30:51		Imputing missing values Successful. Exited the impute_missing_values method of the Preprocessor class
+2023-03-19/14:30:51		Entered the encode_categorical_columns method of the Preprocessor class
+2023-03-19/14:30:51		encoding for categorical values successful. Exited the encode_categorical_columns method of the Preprocessor class
+2023-03-19/14:30:51		Entered the scale_numerical_columns method of the Preprocessor class
+2023-03-19/14:30:51		scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2023-03-19/14:30:51		Entered the load_model method of the File_Operation class
+2023-03-19/14:30:51		Model File KMeans loaded. Exited the load_model method of the Model_Finder class
+2023-03-19/14:32:12		Start of Validation on files for prediction!!
+2023-03-19/14:32:12		Raw Data Validation Complete!!
+2023-03-19/14:32:12		Starting Data Transforamtion!!
+2023-03-19/14:32:12		DataTransformation Completed!!!
+2023-03-19/14:32:12		Creating Prediction_Database and tables on the basis of given schema!!!
+2023-03-19/14:32:12		Table creation Completed!!
+2023-03-19/14:32:12		Insertion of Data into Table started!!!!
+2023-03-19/14:32:15		Insertion in Table completed!!!
+2023-03-19/14:32:15		Deleting Good Data Folder!!!
+2023-03-19/14:32:15		Good_Data folder deleted!!!
+2023-03-19/14:32:15		Moving bad files to Archive and deleting Bad_Data folder!!!
+2023-03-19/14:32:15		Bad files moved to archive!! Bad folder Deleted!!
+2023-03-19/14:32:15		Validation Operation completed!!
+2023-03-19/14:32:15		Extracting csv file from table
+2023-03-19/14:32:15		Start of Prediction
+2023-03-19/14:32:15		Entered the get_data method of the Data_Getter class
+2023-03-19/14:32:15		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-19/14:32:15		Entered the remove_columns method of the Preprocessor class
+2023-03-19/14:32:15		Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2023-03-19/14:32:15		Entered the is_null_present method of the Preprocessor class
+2023-03-19/14:32:15		Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2023-03-19/14:32:15		Entered the impute_missing_values method of the Preprocessor class
+2023-03-19/14:32:15		Imputing missing values Successful. Exited the impute_missing_values method of the Preprocessor class
+2023-03-19/14:32:15		Entered the encode_categorical_columns method of the Preprocessor class
+2023-03-19/14:32:15		encoding for categorical values successful. Exited the encode_categorical_columns method of the Preprocessor class
+2023-03-19/14:32:15		Entered the scale_numerical_columns method of the Preprocessor class
+2023-03-19/14:32:15		scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2023-03-19/14:32:15		Entered the load_model method of the File_Operation class
+2023-03-19/14:32:15		Model File KMeans loaded. Exited the load_model method of the Model_Finder class
+2023-03-20/00:24:05		Start of Validation on files for prediction!!
+2023-03-20/00:24:05		Raw Data Validation Complete!!
+2023-03-20/00:24:05		Starting Data Transforamtion!!
+2023-03-20/00:24:05		DataTransformation Completed!!!
+2023-03-20/00:24:05		Creating Prediction_Database and tables on the basis of given schema!!!
+2023-03-20/00:24:05		Table creation Completed!!
+2023-03-20/00:24:05		Insertion of Data into Table started!!!!
+2023-03-20/00:24:09		Insertion in Table completed!!!
+2023-03-20/00:24:09		Deleting Good Data Folder!!!
+2023-03-20/00:24:09		Good_Data folder deleted!!!
+2023-03-20/00:24:09		Moving bad files to Archive and deleting Bad_Data folder!!!
+2023-03-20/00:24:09		Bad files moved to archive!! Bad folder Deleted!!
+2023-03-20/00:24:09		Validation Operation completed!!
+2023-03-20/00:24:09		Extracting csv file from table
+2023-03-20/00:24:09		Start of Prediction
+2023-03-20/00:24:09		Entered the get_data method of the Data_Getter class
+2023-03-20/00:24:09		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-20/00:24:09		Entered the get_data method of the Data_Getter class
+2023-03-20/00:24:09		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-20/00:24:09		Error occured while running the prediction!! Error:: "['fraud_reported'] not in index"
+2023-03-20/00:29:14		Start of Validation on files for prediction!!
+2023-03-20/00:29:14		Raw Data Validation Complete!!
+2023-03-20/00:29:14		Starting Data Transforamtion!!
+2023-03-20/00:29:14		DataTransformation Completed!!!
+2023-03-20/00:29:14		Creating Prediction_Database and tables on the basis of given schema!!!
+2023-03-20/00:29:14		Table creation Completed!!
+2023-03-20/00:29:14		Insertion of Data into Table started!!!!
+2023-03-20/00:29:18		Insertion in Table completed!!!
+2023-03-20/00:29:18		Deleting Good Data Folder!!!
+2023-03-20/00:29:18		Good_Data folder deleted!!!
+2023-03-20/00:29:18		Moving bad files to Archive and deleting Bad_Data folder!!!
+2023-03-20/00:29:18		Bad files moved to archive!! Bad folder Deleted!!
+2023-03-20/00:29:18		Validation Operation completed!!
+2023-03-20/00:29:18		Extracting csv file from table
+2023-03-20/00:29:18		Start of Prediction
+2023-03-20/00:29:18		Entered the get_data method of the Data_Getter class
+2023-03-20/00:29:18		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-20/00:29:18		Entered the get_data method of the Data_Getter class
+2023-03-20/00:29:18		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-20/00:29:18		Error occured while running the prediction!! Error:: Lengths must match to compare
+2023-03-20/00:31:32		Start of Validation on files for prediction!!
+2023-03-20/00:31:32		Raw Data Validation Complete!!
+2023-03-20/00:31:32		Starting Data Transforamtion!!
+2023-03-20/00:31:32		DataTransformation Completed!!!
+2023-03-20/00:31:32		Creating Prediction_Database and tables on the basis of given schema!!!
+2023-03-20/00:31:33		Table creation Completed!!
+2023-03-20/00:31:33		Insertion of Data into Table started!!!!
+2023-03-20/00:31:36		Insertion in Table completed!!!
+2023-03-20/00:31:36		Deleting Good Data Folder!!!
+2023-03-20/00:31:36		Good_Data folder deleted!!!
+2023-03-20/00:31:36		Moving bad files to Archive and deleting Bad_Data folder!!!
+2023-03-20/00:31:36		Bad files moved to archive!! Bad folder Deleted!!
+2023-03-20/00:31:36		Validation Operation completed!!
+2023-03-20/00:31:36		Extracting csv file from table
+2023-03-20/00:31:36		Start of Prediction
+2023-03-20/00:31:36		Entered the get_data method of the Data_Getter class
+2023-03-20/00:31:36		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-20/00:31:36		Entered the get_data method of the Data_Getter class
+2023-03-20/00:31:36		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-20/00:31:36		Entered the remove_columns method of the Preprocessor class
+2023-03-20/00:31:36		Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2023-03-20/00:31:36		Entered the is_null_present method of the Preprocessor class
+2023-03-20/00:31:36		Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2023-03-20/00:31:36		Entered the impute_missing_values method of the Preprocessor class
+2023-03-20/00:31:36		Imputing missing values Successful. Exited the impute_missing_values method of the Preprocessor class
+2023-03-20/00:31:36		Entered the encode_categorical_columns method of the Preprocessor class
+2023-03-20/00:31:36		encoding for categorical values successful. Exited the encode_categorical_columns method of the Preprocessor class
+2023-03-20/00:31:36		Entered the scale_numerical_columns method of the Preprocessor class
+2023-03-20/00:31:36		scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2023-03-20/00:31:36		Entered the load_model method of the File_Operation class
+2023-03-20/00:31:36		Model File KMeans loaded. Exited the load_model method of the Model_Finder class
+2023-03-20/00:33:20		Start of Validation on files for prediction!!
+2023-03-20/00:33:20		Raw Data Validation Complete!!
+2023-03-20/00:33:20		Starting Data Transforamtion!!
+2023-03-20/00:33:20		DataTransformation Completed!!!
+2023-03-20/00:33:20		Creating Prediction_Database and tables on the basis of given schema!!!
+2023-03-20/00:33:20		Table creation Completed!!
+2023-03-20/00:33:20		Insertion of Data into Table started!!!!
+2023-03-20/00:33:23		Insertion in Table completed!!!
+2023-03-20/00:33:23		Deleting Good Data Folder!!!
+2023-03-20/00:33:23		Good_Data folder deleted!!!
+2023-03-20/00:33:23		Moving bad files to Archive and deleting Bad_Data folder!!!
+2023-03-20/00:33:23		Bad files moved to archive!! Bad folder Deleted!!
+2023-03-20/00:33:23		Validation Operation completed!!
+2023-03-20/00:33:23		Extracting csv file from table
+2023-03-20/00:33:23		Start of Prediction
+2023-03-20/00:33:23		Entered the get_data method of the Data_Getter class
+2023-03-20/00:33:23		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-20/00:33:23		Entered the get_data method of the Data_Getter class
+2023-03-20/00:33:23		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-20/00:33:23		Entered the remove_columns method of the Preprocessor class
+2023-03-20/00:33:23		Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2023-03-20/00:33:23		Entered the is_null_present method of the Preprocessor class
+2023-03-20/00:33:23		Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2023-03-20/00:33:23		Entered the impute_missing_values method of the Preprocessor class
+2023-03-20/00:33:23		Imputing missing values Successful. Exited the impute_missing_values method of the Preprocessor class
+2023-03-20/00:33:23		Entered the encode_categorical_columns method of the Preprocessor class
+2023-03-20/00:33:23		encoding for categorical values successful. Exited the encode_categorical_columns method of the Preprocessor class
+2023-03-20/00:33:23		Entered the scale_numerical_columns method of the Preprocessor class
+2023-03-20/00:33:23		scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2023-03-20/00:33:23		Entered the load_model method of the File_Operation class
+2023-03-20/00:33:23		Model File KMeans loaded. Exited the load_model method of the Model_Finder class
+2023-03-20/00:35:23		Start of Validation on files for prediction!!
+2023-03-20/00:35:23		Raw Data Validation Complete!!
+2023-03-20/00:35:23		Starting Data Transforamtion!!
+2023-03-20/00:35:23		DataTransformation Completed!!!
+2023-03-20/00:35:23		Creating Prediction_Database and tables on the basis of given schema!!!
+2023-03-20/00:35:23		Table creation Completed!!
+2023-03-20/00:35:23		Insertion of Data into Table started!!!!
+2023-03-20/00:35:26		Insertion in Table completed!!!
+2023-03-20/00:35:26		Deleting Good Data Folder!!!
+2023-03-20/00:35:26		Good_Data folder deleted!!!
+2023-03-20/00:35:26		Moving bad files to Archive and deleting Bad_Data folder!!!
+2023-03-20/00:35:26		Bad files moved to archive!! Bad folder Deleted!!
+2023-03-20/00:35:26		Validation Operation completed!!
+2023-03-20/00:35:26		Extracting csv file from table
+2023-03-20/00:35:26		Start of Prediction
+2023-03-20/00:35:26		Entered the get_data method of the Data_Getter class
+2023-03-20/00:35:26		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-20/00:35:26		Entered the get_data method of the Data_Getter class
+2023-03-20/00:35:26		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-20/00:35:26		Entered the remove_columns method of the Preprocessor class
+2023-03-20/00:35:26		Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2023-03-20/00:35:26		Entered the is_null_present method of the Preprocessor class
+2023-03-20/00:35:26		Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2023-03-20/00:35:26		Entered the impute_missing_values method of the Preprocessor class
+2023-03-20/00:35:26		Imputing missing values Successful. Exited the impute_missing_values method of the Preprocessor class
+2023-03-20/00:35:26		Entered the encode_categorical_columns method of the Preprocessor class
+2023-03-20/00:35:26		encoding for categorical values successful. Exited the encode_categorical_columns method of the Preprocessor class
+2023-03-20/00:35:26		Entered the scale_numerical_columns method of the Preprocessor class
+2023-03-20/00:35:26		scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2023-03-20/00:35:26		Entered the load_model method of the File_Operation class
+2023-03-20/00:35:26		Model File KMeans loaded. Exited the load_model method of the Model_Finder class
+2023-03-20/00:37:05		Start of Validation on files for prediction!!
+2023-03-20/00:37:05		Raw Data Validation Complete!!
+2023-03-20/00:37:05		Starting Data Transforamtion!!
+2023-03-20/00:37:05		DataTransformation Completed!!!
+2023-03-20/00:37:05		Creating Prediction_Database and tables on the basis of given schema!!!
+2023-03-20/00:37:05		Table creation Completed!!
+2023-03-20/00:37:05		Insertion of Data into Table started!!!!
+2023-03-20/00:37:08		Insertion in Table completed!!!
+2023-03-20/00:37:08		Deleting Good Data Folder!!!
+2023-03-20/00:37:08		Good_Data folder deleted!!!
+2023-03-20/00:37:08		Moving bad files to Archive and deleting Bad_Data folder!!!
+2023-03-20/00:37:08		Bad files moved to archive!! Bad folder Deleted!!
+2023-03-20/00:37:08		Validation Operation completed!!
+2023-03-20/00:37:08		Extracting csv file from table
+2023-03-20/00:37:08		Start of Prediction
+2023-03-20/00:37:08		Entered the get_data method of the Data_Getter class
+2023-03-20/00:37:08		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-20/00:37:08		Entered the get_data method of the Data_Getter class
+2023-03-20/00:37:08		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-20/00:37:08		Entered the remove_columns method of the Preprocessor class
+2023-03-20/00:37:08		Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2023-03-20/00:37:08		Entered the is_null_present method of the Preprocessor class
+2023-03-20/00:37:08		Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2023-03-20/00:37:08		Entered the impute_missing_values method of the Preprocessor class
+2023-03-20/00:37:08		Imputing missing values Successful. Exited the impute_missing_values method of the Preprocessor class
+2023-03-20/00:37:08		Entered the encode_categorical_columns method of the Preprocessor class
+2023-03-20/00:37:08		encoding for categorical values successful. Exited the encode_categorical_columns method of the Preprocessor class
+2023-03-20/00:37:08		Entered the scale_numerical_columns method of the Preprocessor class
+2023-03-20/00:37:08		scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2023-03-20/00:37:08		Entered the load_model method of the File_Operation class
+2023-03-20/00:37:08		Model File KMeans loaded. Exited the load_model method of the Model_Finder class
+2023-03-20/00:38:32		Start of Validation on files for prediction!!
+2023-03-20/00:38:32		Raw Data Validation Complete!!
+2023-03-20/00:38:32		Starting Data Transforamtion!!
+2023-03-20/00:38:32		DataTransformation Completed!!!
+2023-03-20/00:38:32		Creating Prediction_Database and tables on the basis of given schema!!!
+2023-03-20/00:38:32		Table creation Completed!!
+2023-03-20/00:38:32		Insertion of Data into Table started!!!!
+2023-03-20/00:38:35		Insertion in Table completed!!!
+2023-03-20/00:38:35		Deleting Good Data Folder!!!
+2023-03-20/00:38:35		Good_Data folder deleted!!!
+2023-03-20/00:38:35		Moving bad files to Archive and deleting Bad_Data folder!!!
+2023-03-20/00:38:35		Bad files moved to archive!! Bad folder Deleted!!
+2023-03-20/00:38:35		Validation Operation completed!!
+2023-03-20/00:38:35		Extracting csv file from table
+2023-03-20/00:38:35		Start of Prediction
+2023-03-20/00:38:35		Entered the get_data method of the Data_Getter class
+2023-03-20/00:38:35		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-20/00:38:35		Entered the get_data method of the Data_Getter class
+2023-03-20/00:38:35		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-20/00:38:35		Entered the remove_columns method of the Preprocessor class
+2023-03-20/00:38:35		Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2023-03-20/00:38:35		Entered the is_null_present method of the Preprocessor class
+2023-03-20/00:38:35		Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2023-03-20/00:38:35		Entered the impute_missing_values method of the Preprocessor class
+2023-03-20/00:38:35		Imputing missing values Successful. Exited the impute_missing_values method of the Preprocessor class
+2023-03-20/00:38:35		Entered the encode_categorical_columns method of the Preprocessor class
+2023-03-20/00:38:35		encoding for categorical values successful. Exited the encode_categorical_columns method of the Preprocessor class
+2023-03-20/00:38:35		Entered the scale_numerical_columns method of the Preprocessor class
+2023-03-20/00:38:35		scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2023-03-20/00:38:35		Entered the load_model method of the File_Operation class
+2023-03-20/00:38:35		Model File KMeans loaded. Exited the load_model method of the Model_Finder class
+2023-03-20/00:38:35		Error occured while running the prediction!! Error:: The feature names should match those that were passed during fit.
+Feature names must be in the same order as they were in fit.
+
+2023-03-20/00:40:20		Start of Validation on files for prediction!!
+2023-03-20/00:40:20		Raw Data Validation Complete!!
+2023-03-20/00:40:20		Starting Data Transforamtion!!
+2023-03-20/00:40:20		DataTransformation Completed!!!
+2023-03-20/00:40:20		Creating Prediction_Database and tables on the basis of given schema!!!
+2023-03-20/00:40:20		Table creation Completed!!
+2023-03-20/00:40:20		Insertion of Data into Table started!!!!
+2023-03-20/00:40:24		Insertion in Table completed!!!
+2023-03-20/00:40:24		Deleting Good Data Folder!!!
+2023-03-20/00:40:24		Good_Data folder deleted!!!
+2023-03-20/00:40:24		Moving bad files to Archive and deleting Bad_Data folder!!!
+2023-03-20/00:40:24		Bad files moved to archive!! Bad folder Deleted!!
+2023-03-20/00:40:24		Validation Operation completed!!
+2023-03-20/00:40:24		Extracting csv file from table
+2023-03-20/00:40:24		Start of Prediction
+2023-03-20/00:40:24		Entered the get_data method of the Data_Getter class
+2023-03-20/00:40:24		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-20/00:40:24		Entered the get_data method of the Data_Getter class
+2023-03-20/00:40:24		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-20/00:40:24		Error occured while running the prediction!! Error:: 'DataFrame' object has no attribute 'colums'
+2023-03-20/00:40:45		Start of Validation on files for prediction!!
+2023-03-20/00:40:45		Raw Data Validation Complete!!
+2023-03-20/00:40:45		Starting Data Transforamtion!!
+2023-03-20/00:40:45		DataTransformation Completed!!!
+2023-03-20/00:40:45		Creating Prediction_Database and tables on the basis of given schema!!!
+2023-03-20/00:40:46		Table creation Completed!!
+2023-03-20/00:40:46		Insertion of Data into Table started!!!!
+2023-03-20/00:40:49		Insertion in Table completed!!!
+2023-03-20/00:40:49		Deleting Good Data Folder!!!
+2023-03-20/00:40:49		Good_Data folder deleted!!!
+2023-03-20/00:40:49		Moving bad files to Archive and deleting Bad_Data folder!!!
+2023-03-20/00:40:49		Bad files moved to archive!! Bad folder Deleted!!
+2023-03-20/00:40:49		Validation Operation completed!!
+2023-03-20/00:40:49		Extracting csv file from table
+2023-03-20/00:40:49		Start of Prediction
+2023-03-20/00:40:49		Entered the get_data method of the Data_Getter class
+2023-03-20/00:40:49		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-20/00:40:49		Entered the get_data method of the Data_Getter class
+2023-03-20/00:40:49		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-20/00:40:49		Entered the remove_columns method of the Preprocessor class
+2023-03-20/00:40:49		Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2023-03-20/00:40:49		Entered the is_null_present method of the Preprocessor class
+2023-03-20/00:40:49		Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2023-03-20/00:40:49		Entered the impute_missing_values method of the Preprocessor class
+2023-03-20/00:40:49		Imputing missing values Successful. Exited the impute_missing_values method of the Preprocessor class
+2023-03-20/00:40:49		Entered the encode_categorical_columns method of the Preprocessor class
+2023-03-20/00:40:49		encoding for categorical values successful. Exited the encode_categorical_columns method of the Preprocessor class
+2023-03-20/00:40:49		Entered the scale_numerical_columns method of the Preprocessor class
+2023-03-20/00:40:49		scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2023-03-20/00:40:49		Entered the load_model method of the File_Operation class
+2023-03-20/00:40:49		Model File KMeans loaded. Exited the load_model method of the Model_Finder class
+2023-03-20/00:40:49		Error occured while running the prediction!! Error:: The feature names should match those that were passed during fit.
+Feature names must be in the same order as they were in fit.
+
+2023-03-20/00:42:50		Start of Validation on files for prediction!!
+2023-03-20/00:42:50		Raw Data Validation Complete!!
+2023-03-20/00:42:50		Starting Data Transforamtion!!
+2023-03-20/00:42:50		DataTransformation Completed!!!
+2023-03-20/00:42:50		Creating Prediction_Database and tables on the basis of given schema!!!
+2023-03-20/00:42:50		Table creation Completed!!
+2023-03-20/00:42:50		Insertion of Data into Table started!!!!
+2023-03-20/00:42:53		Insertion in Table completed!!!
+2023-03-20/00:42:53		Deleting Good Data Folder!!!
+2023-03-20/00:42:53		Good_Data folder deleted!!!
+2023-03-20/00:42:53		Moving bad files to Archive and deleting Bad_Data folder!!!
+2023-03-20/00:42:53		Bad files moved to archive!! Bad folder Deleted!!
+2023-03-20/00:42:53		Validation Operation completed!!
+2023-03-20/00:42:53		Extracting csv file from table
+2023-03-20/00:42:53		Start of Prediction
+2023-03-20/00:42:53		Entered the get_data method of the Data_Getter class
+2023-03-20/00:42:54		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-20/00:42:54		Entered the get_data method of the Data_Getter class
+2023-03-20/00:42:54		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-20/00:42:54		Entered the remove_columns method of the Preprocessor class
+2023-03-20/00:42:54		Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2023-03-20/00:42:54		Entered the is_null_present method of the Preprocessor class
+2023-03-20/00:42:54		Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2023-03-20/00:42:54		Entered the impute_missing_values method of the Preprocessor class
+2023-03-20/00:42:54		Imputing missing values Successful. Exited the impute_missing_values method of the Preprocessor class
+2023-03-20/00:42:54		Entered the encode_categorical_columns method of the Preprocessor class
+2023-03-20/00:42:54		encoding for categorical values successful. Exited the encode_categorical_columns method of the Preprocessor class
+2023-03-20/00:42:54		Entered the scale_numerical_columns method of the Preprocessor class
+2023-03-20/00:42:54		scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2023-03-20/00:42:54		Entered the load_model method of the File_Operation class
+2023-03-20/00:42:54		Model File KMeans loaded. Exited the load_model method of the Model_Finder class
+2023-03-20/00:45:38		Start of Validation on files for prediction!!
+2023-03-20/00:45:38		Raw Data Validation Complete!!
+2023-03-20/00:45:38		Starting Data Transforamtion!!
+2023-03-20/00:45:38		DataTransformation Completed!!!
+2023-03-20/00:45:38		Creating Prediction_Database and tables on the basis of given schema!!!
+2023-03-20/00:45:39		Table creation Completed!!
+2023-03-20/00:45:39		Insertion of Data into Table started!!!!
+2023-03-20/00:45:42		Insertion in Table completed!!!
+2023-03-20/00:45:42		Deleting Good Data Folder!!!
+2023-03-20/00:45:42		Good_Data folder deleted!!!
+2023-03-20/00:45:42		Moving bad files to Archive and deleting Bad_Data folder!!!
+2023-03-20/00:45:42		Bad files moved to archive!! Bad folder Deleted!!
+2023-03-20/00:45:42		Validation Operation completed!!
+2023-03-20/00:45:42		Extracting csv file from table
+2023-03-20/00:45:42		Start of Prediction
+2023-03-20/00:45:42		Entered the get_data method of the Data_Getter class
+2023-03-20/00:45:42		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-20/00:45:42		Entered the get_data method of the Data_Getter class
+2023-03-20/00:45:42		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-20/00:45:42		Entered the remove_columns method of the Preprocessor class
+2023-03-20/00:45:42		Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2023-03-20/00:45:42		Entered the is_null_present method of the Preprocessor class
+2023-03-20/00:45:42		Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2023-03-20/00:45:42		Entered the impute_missing_values method of the Preprocessor class
+2023-03-20/00:45:42		Imputing missing values Successful. Exited the impute_missing_values method of the Preprocessor class
+2023-03-20/00:45:42		Entered the encode_categorical_columns method of the Preprocessor class
+2023-03-20/00:45:42		encoding for categorical values successful. Exited the encode_categorical_columns method of the Preprocessor class
+2023-03-20/00:45:42		Entered the scale_numerical_columns method of the Preprocessor class
+2023-03-20/00:45:42		scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2023-03-20/00:45:42		Entered the load_model method of the File_Operation class
+2023-03-20/00:45:42		Model File KMeans loaded. Exited the load_model method of the Model_Finder class
+2023-03-20/00:46:11		Start of Validation on files for prediction!!
+2023-03-20/00:46:11		Raw Data Validation Complete!!
+2023-03-20/00:46:11		Starting Data Transforamtion!!
+2023-03-20/00:46:11		DataTransformation Completed!!!
+2023-03-20/00:46:11		Creating Prediction_Database and tables on the basis of given schema!!!
+2023-03-20/00:46:11		Table creation Completed!!
+2023-03-20/00:46:11		Insertion of Data into Table started!!!!
+2023-03-20/00:46:14		Insertion in Table completed!!!
+2023-03-20/00:46:14		Deleting Good Data Folder!!!
+2023-03-20/00:46:14		Good_Data folder deleted!!!
+2023-03-20/00:46:14		Moving bad files to Archive and deleting Bad_Data folder!!!
+2023-03-20/00:46:14		Bad files moved to archive!! Bad folder Deleted!!
+2023-03-20/00:46:14		Validation Operation completed!!
+2023-03-20/00:46:14		Extracting csv file from table
+2023-03-20/00:46:14		Start of Prediction
+2023-03-20/00:46:14		Entered the get_data method of the Data_Getter class
+2023-03-20/00:46:14		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-20/00:46:14		Entered the get_data method of the Data_Getter class
+2023-03-20/00:46:14		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-20/00:46:14		Entered the remove_columns method of the Preprocessor class
+2023-03-20/00:46:14		Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2023-03-20/00:46:14		Entered the is_null_present method of the Preprocessor class
+2023-03-20/00:46:14		Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2023-03-20/00:46:14		Entered the impute_missing_values method of the Preprocessor class
+2023-03-20/00:46:14		Imputing missing values Successful. Exited the impute_missing_values method of the Preprocessor class
+2023-03-20/00:46:14		Entered the encode_categorical_columns method of the Preprocessor class
+2023-03-20/00:46:14		encoding for categorical values successful. Exited the encode_categorical_columns method of the Preprocessor class
+2023-03-20/00:46:14		Entered the scale_numerical_columns method of the Preprocessor class
+2023-03-20/00:46:14		scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2023-03-20/00:46:14		Entered the load_model method of the File_Operation class
+2023-03-20/00:46:14		Model File KMeans loaded. Exited the load_model method of the Model_Finder class
+2023-03-20/00:46:58		Start of Validation on files for prediction!!
+2023-03-20/00:46:58		Raw Data Validation Complete!!
+2023-03-20/00:46:58		Starting Data Transforamtion!!
+2023-03-20/00:46:58		DataTransformation Completed!!!
+2023-03-20/00:46:58		Creating Prediction_Database and tables on the basis of given schema!!!
+2023-03-20/00:46:59		Table creation Completed!!
+2023-03-20/00:46:59		Insertion of Data into Table started!!!!
+2023-03-20/00:47:02		Insertion in Table completed!!!
+2023-03-20/00:47:02		Deleting Good Data Folder!!!
+2023-03-20/00:47:02		Good_Data folder deleted!!!
+2023-03-20/00:47:02		Moving bad files to Archive and deleting Bad_Data folder!!!
+2023-03-20/00:47:02		Bad files moved to archive!! Bad folder Deleted!!
+2023-03-20/00:47:02		Validation Operation completed!!
+2023-03-20/00:47:02		Extracting csv file from table
+2023-03-20/00:47:02		Start of Prediction
+2023-03-20/00:47:02		Entered the get_data method of the Data_Getter class
+2023-03-20/00:47:02		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-20/00:47:02		Entered the get_data method of the Data_Getter class
+2023-03-20/00:47:02		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-20/00:47:02		Entered the remove_columns method of the Preprocessor class
+2023-03-20/00:47:02		Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2023-03-20/00:47:02		Entered the is_null_present method of the Preprocessor class
+2023-03-20/00:47:02		Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2023-03-20/00:47:02		Entered the impute_missing_values method of the Preprocessor class
+2023-03-20/00:47:02		Imputing missing values Successful. Exited the impute_missing_values method of the Preprocessor class
+2023-03-20/00:47:02		Entered the encode_categorical_columns method of the Preprocessor class
+2023-03-20/00:47:02		encoding for categorical values successful. Exited the encode_categorical_columns method of the Preprocessor class
+2023-03-20/00:47:02		Entered the scale_numerical_columns method of the Preprocessor class
+2023-03-20/00:47:02		scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2023-03-20/00:47:02		Entered the load_model method of the File_Operation class
+2023-03-20/00:47:02		Model File KMeans loaded. Exited the load_model method of the Model_Finder class
+2023-03-20/01:03:23		Start of Validation on files for prediction!!
+2023-03-20/01:03:23		Raw Data Validation Complete!!
+2023-03-20/01:03:23		Starting Data Transforamtion!!
+2023-03-20/01:03:23		DataTransformation Completed!!!
+2023-03-20/01:03:23		Creating Prediction_Database and tables on the basis of given schema!!!
+2023-03-20/01:03:23		Table creation Completed!!
+2023-03-20/01:03:23		Insertion of Data into Table started!!!!
+2023-03-20/01:03:26		Insertion in Table completed!!!
+2023-03-20/01:03:26		Deleting Good Data Folder!!!
+2023-03-20/01:03:26		Good_Data folder deleted!!!
+2023-03-20/01:03:26		Moving bad files to Archive and deleting Bad_Data folder!!!
+2023-03-20/01:03:26		Bad files moved to archive!! Bad folder Deleted!!
+2023-03-20/01:03:26		Validation Operation completed!!
+2023-03-20/01:03:26		Extracting csv file from table
+2023-03-20/01:03:26		Start of Prediction
+2023-03-20/01:03:26		Entered the get_data method of the Data_Getter class
+2023-03-20/01:03:26		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-20/01:03:26		Entered the get_data method of the Data_Getter class
+2023-03-20/01:03:26		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-20/01:03:26		Entered the remove_columns method of the Preprocessor class
+2023-03-20/01:03:26		Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2023-03-20/01:03:26		Entered the is_null_present method of the Preprocessor class
+2023-03-20/01:03:26		Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2023-03-20/01:03:26		Entered the impute_missing_values method of the Preprocessor class
+2023-03-20/01:03:26		Imputing missing values Successful. Exited the impute_missing_values method of the Preprocessor class
+2023-03-20/01:03:26		Entered the encode_categorical_columns method of the Preprocessor class
+2023-03-20/01:03:26		encoding for categorical values successful. Exited the encode_categorical_columns method of the Preprocessor class
+2023-03-20/01:03:26		Entered the scale_numerical_columns method of the Preprocessor class
+2023-03-20/01:03:26		scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2023-03-20/01:03:26		Entered the load_model method of the File_Operation class
+2023-03-20/01:03:26		Model File KMeans loaded. Exited the load_model method of the Model_Finder class
+2023-03-20/01:04:41		Start of Validation on files for prediction!!
+2023-03-20/01:04:41		Raw Data Validation Complete!!
+2023-03-20/01:04:41		Starting Data Transforamtion!!
+2023-03-20/01:04:41		DataTransformation Completed!!!
+2023-03-20/01:04:41		Creating Prediction_Database and tables on the basis of given schema!!!
+2023-03-20/01:04:41		Table creation Completed!!
+2023-03-20/01:04:41		Insertion of Data into Table started!!!!
+2023-03-20/01:04:44		Insertion in Table completed!!!
+2023-03-20/01:04:44		Deleting Good Data Folder!!!
+2023-03-20/01:04:44		Good_Data folder deleted!!!
+2023-03-20/01:04:44		Moving bad files to Archive and deleting Bad_Data folder!!!
+2023-03-20/01:04:44		Bad files moved to archive!! Bad folder Deleted!!
+2023-03-20/01:04:44		Validation Operation completed!!
+2023-03-20/01:04:44		Extracting csv file from table
+2023-03-20/01:04:44		Start of Prediction
+2023-03-20/01:04:44		Entered the get_data method of the Data_Getter class
+2023-03-20/01:04:44		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-20/01:04:44		Entered the get_data method of the Data_Getter class
+2023-03-20/01:04:44		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-20/01:04:44		Entered the remove_columns method of the Preprocessor class
+2023-03-20/01:04:44		Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2023-03-20/01:04:44		Entered the is_null_present method of the Preprocessor class
+2023-03-20/01:04:44		Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2023-03-20/01:04:44		Entered the impute_missing_values method of the Preprocessor class
+2023-03-20/01:04:44		Imputing missing values Successful. Exited the impute_missing_values method of the Preprocessor class
+2023-03-20/01:04:44		Entered the encode_categorical_columns method of the Preprocessor class
+2023-03-20/01:04:44		encoding for categorical values successful. Exited the encode_categorical_columns method of the Preprocessor class
+2023-03-20/01:04:44		Entered the scale_numerical_columns method of the Preprocessor class
+2023-03-20/01:04:44		scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2023-03-20/01:04:44		Entered the load_model method of the File_Operation class
+2023-03-20/01:04:44		Model File KMeans loaded. Exited the load_model method of the Model_Finder class
+2023-03-20/01:04:44		Error occured while running the prediction!! Error:: The feature names should match those that were passed during fit.
+Feature names must be in the same order as they were in fit.
+
+2023-03-20/23:59:22		Start of Validation on files for prediction!!
+2023-03-20/23:59:22		Raw Data Validation Complete!!
+2023-03-20/23:59:22		Starting Data Transforamtion!!
+2023-03-20/23:59:22		DataTransformation Completed!!!
+2023-03-20/23:59:22		Creating Prediction_Database and tables on the basis of given schema!!!
+2023-03-20/23:59:22		Table creation Completed!!
+2023-03-20/23:59:22		Insertion of Data into Table started!!!!
+2023-03-20/23:59:25		Insertion in Table completed!!!
+2023-03-20/23:59:25		Deleting Good Data Folder!!!
+2023-03-20/23:59:25		Good_Data folder deleted!!!
+2023-03-20/23:59:25		Moving bad files to Archive and deleting Bad_Data folder!!!
+2023-03-20/23:59:25		Bad files moved to archive!! Bad folder Deleted!!
+2023-03-20/23:59:25		Validation Operation completed!!
+2023-03-20/23:59:25		Extracting csv file from table
+2023-03-20/23:59:25		Start of Prediction
+2023-03-20/23:59:25		Entered the get_data method of the Data_Getter class
+2023-03-20/23:59:25		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-20/23:59:25		Entered the get_data method of the Data_Getter class
+2023-03-20/23:59:25		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-20/23:59:25		Entered the remove_columns method of the Preprocessor class
+2023-03-20/23:59:25		Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2023-03-21/00:18:10		Start of Validation on files for prediction!!
+2023-03-21/00:18:10		Raw Data Validation Complete!!
+2023-03-21/00:18:10		Starting Data Transforamtion!!
+2023-03-21/00:18:10		DataTransformation Completed!!!
+2023-03-21/00:18:10		Creating Prediction_Database and tables on the basis of given schema!!!
+2023-03-21/00:18:10		Table creation Completed!!
+2023-03-21/00:18:10		Insertion of Data into Table started!!!!
+2023-03-21/00:18:13		Insertion in Table completed!!!
+2023-03-21/00:18:13		Deleting Good Data Folder!!!
+2023-03-21/00:18:13		Good_Data folder deleted!!!
+2023-03-21/00:18:13		Moving bad files to Archive and deleting Bad_Data folder!!!
+2023-03-21/00:18:13		Bad files moved to archive!! Bad folder Deleted!!
+2023-03-21/00:18:13		Validation Operation completed!!
+2023-03-21/00:18:13		Extracting csv file from table
+2023-03-21/00:18:13		Start of Prediction
+2023-03-21/00:18:13		Entered the get_data method of the Data_Getter class
+2023-03-21/00:18:13		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-21/00:18:13		Entered the get_data method of the Data_Getter class
+2023-03-21/00:18:13		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-21/00:18:13		Entered the remove_columns method of the Preprocessor class
+2023-03-21/00:18:13		Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2023-03-21/00:18:13		Entered the is_null_present method of the Preprocessor class
+2023-03-21/00:18:13		Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2023-03-21/00:18:13		Entered the impute_missing_values method of the Preprocessor class
+2023-03-21/00:18:13		Imputing missing values Successful. Exited the impute_missing_values method of the Preprocessor class
+2023-03-21/00:18:58		Start of Validation on files for prediction!!
+2023-03-21/00:18:58		Raw Data Validation Complete!!
+2023-03-21/00:18:58		Starting Data Transforamtion!!
+2023-03-21/00:18:58		DataTransformation Completed!!!
+2023-03-21/00:18:58		Creating Prediction_Database and tables on the basis of given schema!!!
+2023-03-21/00:18:58		Table creation Completed!!
+2023-03-21/00:18:58		Insertion of Data into Table started!!!!
+2023-03-21/00:19:01		Insertion in Table completed!!!
+2023-03-21/00:19:01		Deleting Good Data Folder!!!
+2023-03-21/00:19:01		Good_Data folder deleted!!!
+2023-03-21/00:19:01		Moving bad files to Archive and deleting Bad_Data folder!!!
+2023-03-21/00:19:01		Bad files moved to archive!! Bad folder Deleted!!
+2023-03-21/00:19:01		Validation Operation completed!!
+2023-03-21/00:19:01		Extracting csv file from table
+2023-03-21/00:19:01		Start of Prediction
+2023-03-21/00:19:01		Entered the get_data method of the Data_Getter class
+2023-03-21/00:19:01		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-21/00:19:01		Entered the get_data method of the Data_Getter class
+2023-03-21/00:19:01		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-21/00:19:01		Entered the remove_columns method of the Preprocessor class
+2023-03-21/00:19:01		Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2023-03-21/00:19:01		Entered the is_null_present method of the Preprocessor class
+2023-03-21/00:19:01		Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2023-03-21/00:19:01		Entered the impute_missing_values method of the Preprocessor class
+2023-03-21/00:19:01		Imputing missing values Successful. Exited the impute_missing_values method of the Preprocessor class
+2023-03-21/00:32:38		Start of Validation on files for prediction!!
+2023-03-21/00:32:38		Raw Data Validation Complete!!
+2023-03-21/00:32:38		Starting Data Transforamtion!!
+2023-03-21/00:32:38		DataTransformation Completed!!!
+2023-03-21/00:32:38		Creating Prediction_Database and tables on the basis of given schema!!!
+2023-03-21/00:32:38		Table creation Completed!!
+2023-03-21/00:32:38		Insertion of Data into Table started!!!!
+2023-03-21/00:32:41		Insertion in Table completed!!!
+2023-03-21/00:32:41		Deleting Good Data Folder!!!
+2023-03-21/00:32:41		Good_Data folder deleted!!!
+2023-03-21/00:32:41		Moving bad files to Archive and deleting Bad_Data folder!!!
+2023-03-21/00:32:41		Bad files moved to archive!! Bad folder Deleted!!
+2023-03-21/00:32:41		Validation Operation completed!!
+2023-03-21/00:32:41		Extracting csv file from table
+2023-03-21/00:32:41		Start of Prediction
+2023-03-21/00:32:41		Entered the get_data method of the Data_Getter class
+2023-03-21/00:32:41		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-21/00:32:41		Entered the get_data method of the Data_Getter class
+2023-03-21/00:32:41		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-21/00:32:41		Entered the remove_columns method of the Preprocessor class
+2023-03-21/00:32:41		Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2023-03-21/00:32:41		Entered the is_null_present method of the Preprocessor class
+2023-03-21/00:32:41		Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2023-03-21/00:32:41		Entered the impute_missing_values method of the Preprocessor class
+2023-03-21/00:32:41		Imputing missing values Successful. Exited the impute_missing_values method of the Preprocessor class
+2023-03-21/00:32:41		Entered the encode_categorical_columns method of the Preprocessor class
+2023-03-21/00:32:41		encoding for categorical values successful. Exited the encode_categorical_columns method of the Preprocessor class

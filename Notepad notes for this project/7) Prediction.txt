@@ -1,0 +1,77 @@
+Now the model training is complete and we have saved our models.
+
+Now the focus comes back to the main.py file, /predict route is used to do prediction.
+whenever the route name or action is /predict and url contains method as POST, then control comes to the predictRouteClient() function.
+
+All the codes, modules related to data ingestion, validation, preprocessing which were made up till now were for the incoming data from 
+client for training purpose.
+
+Now exactly those codes, modules related to data ingestion, validation, preprocessing will be replicated but with certain changes for
+new incoming data from client for training purpose.
+
+So we have 2 types of codes in this whole project: one for training and other for prediction.
+
+Go through all comments in main.py along with the ctrl+click.
+
+there, pred_validation class in the prediction_Validation_Insertion.py file is imported which does very initial preprocessing like converting '' to "" for insertion into db, empty value replace with NaN, data validation steps and aggregating all data into db and exporting to csv.
+
+This file prediction_Validation_Insertion.py was the prediction counterpart of training_Validation_Insertion.py, so explanation wasn't repeated here again, just refer training_Validation_Insertion.py in root dir for any understanding needed.
+
+This file had also imported predictionDataValidation.py file's prediction_Data_validation class which had all methods for data validation.
+This predictionDataValidation.py in the Prediction_Raw_Data_Validation folder in root dir was prediction counterpart of rawValidation.py in the Training_Raw_Data_Validation folder in root dir.
+
+
+Then in the main.py in the predictRouteClient(), we had also called the prediction class from predictFromModel.py which It includes data preprocessing for the prediction data, then making different clusters out of that whole data, load the already saved models, do predictions and save predictions as csv in the Prediction_Output_File folder in the root dir.
+
+
+Go through it's every detail by ctrl+click.
+
+In the above files, for data ingestion of prediction data, data_loader_prediction.py file was made in data_ingestion folder in root dir.
+
+data_ingestion folder had data_loader.py for loading training data and data_loader_prediction.py loading data on which predictions to be made.
+
+Similarly we had other folders also as both counterparts of training and prediction which were some or the other where used in above explained prediction based files.
+
+e.g. 
+DataTransform_Training and DataTransformation_Prediction
+DataTypeValidation_Insertion_Prediction and DataTypeValidation_Insertion_Training
+TrainingBatchFiles and PredictionBatchFiles for all batch files sent by client.
+Database based files for both of them
+aggregated csv files' folder i.e. Training_FileFromDB and Prediction_FileFromDB.
+TrainingLogs and PredictionLogs fo their respective logging files.
+
+
+All data sent by client for prediction was sent in batches in the Prediction_Batch files folder in root dir from where all batches were sent and aggregated to the database from where all final aggregated data was exported as csv with name InputFile.csv n the Prediction_FileFromDB folder in root dir.
+
+
+
+####################NOw we begin with UI frontend part############################
+
+When after installation of all the libraries, we run main.py, it gives URL as http://127.0.0.1:5001/ and if we open this url in browser or simply click on this URL in pycharm, the default
+method passed by web browser is GET.
+
+Now just have a look at the home route in the main.py.
+
+By default clicking/opening the URL and not passing anything after the rightmost "/" in the http://127.0.0.1:5001/ calls the home route below i.e. it renders the index.html browser
+template for opening the UI.
+
+@app.route("/", methods=['GET'])
+@cross_origin()
+def home():
+    return render_template('index.html')
+
+render_template() is an inbuilt Flask method which looks for the .html file inside the templates folder in the root directory. Flask always looks for html files in templates folder.
+
+
+
+
+
+
+
+
+
+
+
+
+
+

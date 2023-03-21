@@ -1,0 +1,25 @@
+Now in prev notepad file, we have studied about good and bad data, bad data ignored, but good data folder has data validated in batches.
+
+Good and bad raw data folders are temporary folders bcoz we are using them only till insertion in database and deleting them there and then
+after.
+
+For separate batches of data files, we will combine all in database, then export that database table as csv and then that csv file should
+be used as an input for model training.
+
+code is continued same as previous file training_Validation_Insertion.py.
+
+In that same prev class train_validation which was made in training_Validation_Insertion.py, like we had initialized 
+self.raw_data = Raw_Data_validation(path) as an object of  Raw_Data_validation class in rawValidation.py in the 
+Training_Raw_data_validation folder, 
+
+similarly we are initializing an object self.dBOperation = dBOperation() i.e. object of class dBOperation in the DataTypeValidation.py in
+the DataTypeValidation_Insertion_Training folder.
+
+This class dBOperation shall be used for handling all the SQL operations.
+
+different functions of this class dBOperation like createTableDb(), insertIntoTableGoodData(), selectingDatafromtableintocsv() i.e. in the
+last end are explained there in this file training_Validation_Insertion.py with minor comments and for detailed explain, ctrl+click on
+them to jump to DataTypeValidation.py file.
+
+some other functions of Raw_Data_validation() class like deleteExistingGoodDataTrainingFolder(), raw_data.moveBadFilesToArchiveBad()
+are also explained there with minor comments and for detailed explain, ctrl+click onthem to jump to rawValidation.py file.

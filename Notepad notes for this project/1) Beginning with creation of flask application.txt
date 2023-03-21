@@ -1,0 +1,70 @@
+Before going through below notes, please thouroughly go through the notes in register regarding this project.
+
+Explanation begins with main.py file's explanation.
+
+We have created a Flask application. Flask is a web application development framework. Web application is any application created by us
+which can run on an online cloud/server or on the internet. Whatever model/application is created by us can be called anywhere in the world
+if we expose it's API and run it on cloud.
+
+Then comes the 3 routes explained with comments in the main.py file.
+
+Go through each and every comment explained in main.py in detail 1st and then jump to below explanation.
+
+FOcus begins from trainRouteClient() function, go through each and every comment in this fnction and do ctrl+clicks to understand further.
+
+###############################################################
+
+Then we come to the logging part, it is very essential to maintain logging as it helps to keep record of each and every event. Suppose
+if any particular step fails or thorws exception or why it was failed or even ran successfully, all mentioned in logs.
+We can write and maintain logs in a file or even in a database.
+
+we can either use python inbuilt logging framework or even make our own custom logging framework.
+In this proj, we have written our custom logging framework in the logger.py file in the application_logging folder inside the root
+directory which records date, current time and the log message.
+
+We have maintained a folder named Training_logs located in root directory which maintains each and every step of the training in the
+different notepad logging files. e.g. columnValidation.txt, DataBaseConnection.txt, dataTransformLog.txt and many others, have a look 
+inside that folder for all logs.
+
+Similarly, we have Prediction_Logs also.
+
+
+Let's understand the process of validation 1st as we said above. It is always discussed with the client in the beginning that what columns
+will be there, what datatypes, and they clearly specify that they won't accept the columns with empty NaN values or all nulls or what.
+
+So accordingly, we will be writing our own validation rules and whatever data sent by client will be validated whether it is being sent
+in the correct format or not. For this purpose, we have a class named as train_validation which also has a method for train_validation.
+
+As explained in the comments of main.py that we have 2 classes for validation and training i.e. train_validation() and trainModel(),
+before going through the code of train_validation(), let's try and understand some concepts related to validation.
+
+Let's now understand the process of data validation.
+Refer the image named validation_flowchart in the notepads folder which has flowchart for this validation phase, it begins with
+start which marks beginning of this phase  i.e. when client starts sending data, which is validated 1st and if data clears the validation
+according to validation rules, then it is sent to good data folder or else it sent to bad data folder. From good data folder, where we 
+have received good data in batches and now are inserting all this good data into the Database to aggregate all the batches of data.
+Now all aggregated data in database is now exported into csv and control goes to stop after this, which marks the end of this validation
+phase.
+
+In the 1st step after start as we saw above, if data doesn't clear the validation rules, it is sent to bad data folder and from here,
+it is archieved and control directly goes to the bottom stop.
+
+Now ctrl+click on train_validation in main.py which directs us to the training_Validation_Insertion.py file in which the train_validation
+class has been made which contains a method with same name train_validation.
+
+in this file, in the train_validation class, go through all initialized variables in constructor.
+Then, go through each and every line of train_validation method explained well with comments and keep on doing ctrl+click for each and
+every called method in this method, e.g. valuesFromSchema() is a method initialized in rawValidation.py in the Raw_Data_validation class
+whose object was initialized here in trainValidation class. Logging for this method is also done in Training_Logs folder which was 
+mentioned above. And name of file in the Training_Logs folder in which log for this valuesFromSchema() method is done is the 
+valuesfromSchemaValidationLog.txt log file.
+
+Now we have manualRegexCreation() and validationFileNameRaw() function from same class Raw_Data_validation which validates name of csv 
+files in which batches of data sent by client.
+What exact these functions do is mentioned there in comments.Go through comments there and their respective ctrl+click's
+
+Similarly go through all the validation functions there in that file and class and their respective ctrl+click.
+gradually go through each and every comment there and follow step by step explanation wih ctrl+click's there.
+
+
+
