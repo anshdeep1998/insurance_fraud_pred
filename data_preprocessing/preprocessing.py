@@ -152,7 +152,8 @@ class Preprocessor:
                     # Add here a line of calling model_police_report_available class
                     x = model_police_report_available(
                         r"C:\Users\Anshdeep\OneDrive\Desktop\Ineuron\Full stack data science course\Python projects\fraudDetection\models_for_missing_values\data_to_fill_missing.csv",
-                        r"C:\Users\Anshdeep\OneDrive\Desktop\Ineuron\Full stack data science course\Python projects\fraudDetection\models_for_missing_values\police_report_available.pickle")
+                        r"C:\Users\Anshdeep\OneDrive\Desktop\Ineuron\Full stack data science course\Python projects\fraudDetection\models_for_missing_values\police_report_available.pickle",
+                        self.file_object, self.logger_object)
                     filled_column = x.filled_column_to_replace()
                     #  self.data[col] = self.police_report_available_imputed['police_report_available']
                     self.data[col] = filled_column

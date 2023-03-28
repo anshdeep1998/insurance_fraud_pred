@@ -173,9 +173,11 @@ class Model_Finder:
             # comparing the two models and return the best one with better score.
             # Name of model is also returned in the string format below along with the model.
             if(self.svm_score <  self.xgboost_score):
-                return 'XGBoost',self.xgboost
+                return 'XGBoost',self.xgboost, self.xgboost_score
             else:
-                return 'SVM',self.sv_classifier
+                return 'SVM',self.sv_classifier, self.svm_score
+
+
 
         except Exception as e:
             self.logger_object.log(self.file_object,

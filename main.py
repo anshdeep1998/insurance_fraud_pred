@@ -35,7 +35,13 @@ CORS(app)
 @app.route("/", methods=['GET'])
 @cross_origin()
 def home():
-    return render_template('index.html')
+    return render_template('index_n.html')
+
+"""When we click on by default URL http://127.0.0.1:5001/, it calls by default home route until /predict or /train specified.
+   For calling predict and train routes, we need to specify /predict and /train respectively, but when we go through the html code
+   inside index_n.html, we notice that when button from frontend is clicked, the /predict route called which is specified there in
+   html code. Calling /predict route takes input as path of Prediction_Batch_Files folder in root dir for validation and this path
+   is already specified in html file."""
 
 # 2) this below is the prediction route which is called at the time of prediction.
 @app.route("/predict", methods=['POST'])
@@ -46,8 +52,11 @@ def predictRouteClient():# predict route as explained in register notes that whi
                                     # request.json i.e through postman should not be None, else exception raised.
 
             path = request.json['filepath'] # This is the path of location where client has kept data on which
-                                            # we have to do prediction which is the path of batch files inside
+                                            # we have to do validation and prediction which is the path of batch files inside
                                             # the Predicition_Batch_files folder.
+
+                                    # and this path is passed in the code of html file.
+
 
             pred_val = pred_validation(path) # pred_validation class imported from prediction_Validation_Insertion.py file
                                              # in root dir.
@@ -77,7 +86,8 @@ def predictRouteClient():# predict route as explained in register notes that whi
                folder in the root dir.
                """
                    # ctrl+click for explain
-            path = pred.predictionFromModel()
+            path = pred.predictionFromModel() # THis is the path of Predictions.csv in Prediction_Output_File folfer in root dir.
+                                              # This path will be printed in the frontend.
             return Response("Prediction File created at %s!!!" % path)
 
         elif request.form is not None: # This condition is called when we our testing our API from web GUI/ frontend.
@@ -104,6 +114,9 @@ def predictRouteClient():# predict route as explained in register notes that whi
     except Exception as e:
         return Response("Error Occurred! %s" %e)
 
+
+""" As we studied above that clicking on url calls default home route, to call train and predict route, we will use postman
+    i.e. flow will go to if request.json['folderPath'] is not None condition."""
 
 
 @app.route("/train", methods=['POST'])
@@ -146,7 +159,26 @@ def trainRouteClient(): # In the training route, we are doing validation first a
     except Exception as e:
 
         return Response("Error Occurred! %s" % e)
-    return Response("Training successfull!!")
+    return Response("Training successful!!")
+
+
+""" Calling /train and /predict routes in postman:
+    open postman, open new tab->click on raw and select input type as json to send input as json.
+    
+    1) Calling /predict: select method as POST as it was specified above, pass path as http://127.0.0.1:5001/train
+       and pass the path of Prediction_Batch_Files.
+       like done as follows:
+       {
+       "filepath":"Prediction_Batch_Files"
+       }
+    2) calling /train: same process as above, pass path as http://127.0.0.1:5001/predict and pass the path of Training_Batch_Files.
+       {
+       "folderPath":"Training_Batch_Files"
+       }
+       
+    Calling these in postman can do training and prediction.
+    From frontend, we can only call home route.
+       """
 
 port = int(os.getenv("PORT",5001))
 if __name__ == "__main__":

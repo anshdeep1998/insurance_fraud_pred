@@ -64,6 +64,11 @@ class KMeansClustering:
             # init = kmeans++ ensures that clusters don't depend on the centroid initialization as studied in register notes.
             self.kmeans = KMeans(n_clusters=number_of_clusters, init='k-means++', random_state=42)
             #self.data = self.data[~self.data.isin([np.nan, np.inf, -np.inf]).any(1)]
+
+            """ fit_predict() is more relevant to unsupervised or transductive estimators.
+                Essentially, this method will fit and perform predictions over training data thus, is more
+                appropriate when performing operations such as clustering."""
+
             self.y_kmeans=self.kmeans.fit_predict(data) #  divide data into clusters like cluster-0, 1, 2, 3...
 
                          # file_methods.py file imported above is located in file_operations folder in root dir.

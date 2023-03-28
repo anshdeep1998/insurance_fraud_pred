@@ -79,120 +79,122 @@ class trainModel:
             # encode categorical data
             # go to ctrl+click.
             data = preprocessor.encode_categorical_columns(data)
-            data.to_csv(
-                r"C:\Users\Anshdeep\OneDrive\Desktop\Ineuron\Full stack data science course\Python projects\fraudDetection\EDA\trials\train_preprocess-3.csv")
             # print(data)
-            #print(data.isnull().sum())
+            # print(data.isnull().sum())
+
+            # # below separate_label_feature divides data into independent input features and target dependent feature.
+            X,Y=preprocessor.separate_label_feature(data,label_column_name='fraud_reported')
 
 
-            #
-            # # # create separate features and labels
-            # X,Y=preprocessor.separate_label_feature(data,label_column_name='fraud_reported')
+            """ Applying the clustering approach"""
+            # ctrl+click on KmeansClustering() takes us to clustering.py file which has class KMeansClustering()
+            # which takes same 2 arguements as above class Preprocessor() took.
+            kmeans=clustering.KMeansClustering(self.file_object,self.log_writer) # object initialization.
+            # elbow_plot() is function of this class.
+            # ctrl+click to understand detail.
+            # below function saves PNG of elbow plot and returns optimal K.
+            number_of_clusters=kmeans.elbow_plot(X)  #  using the elbow plot to find the number of optimum clusters
 
-#
-#             """ Applying the clustering approach"""
-#             # ctrl+click on KmeansClustering() takes us to clustering.py file which has class KMeansClustering()
-#             # which takes same 2 arguements as above class Preprocessor() took.
-#             kmeans=clustering.KMeansClustering(self.file_object,self.log_writer) # object initialization.
-#             # elbow_plot() is function of this class.
-#             # ctrl+click to understand detail.
-#             # below function saves PNG of elbow plot and returns optimal K.
-#             number_of_clusters=kmeans.elbow_plot(X)  #  using the elbow plot to find the number of optimum clusters
-#
-#             # This below function Divides the data into clusters and no. of clusters were computed by the above
-#             # function .elbow_plot() which are passed in the below function as arguement.
-#             # ctrl+click for explanation for below function create_clusters() which saves kmeans model
-#             # in the in the subfolders of models folder in root dir and returns the data which has additional
-#             # column named Clusters which has cluster no. of each row
-#
-#             """We are saving the clustered data and model bcoz later on when new data records from client comes to us,
-#                model will help us classify that new records/rows into clusters we made just now so that we can apply
-#                specific model to these clusters."""
-#
-#             # Calling this below function create_clusters() not only trains a Kmeans model and divides our data into clusters
-#             # but also saves the same Kmeans model in the models folder in the root directory.
-#
-#             print(X)
-#             X.to_csv(r"C:\Users\Anshdeep\OneDrive\Desktop\Ineuron\Full stack data science course\Python projects\fraudDetection\EDA\Kmeans_input.csv")
-#             print("NO. of clusters: ", number_of_clusters)
-#
-#             # number_of_clusters in which we will divide data will be selected as per elbow method which is our e.g. is 2.
-#             # below function .create_clusters() takes input X i.e. all independent input features which are to be clustered
-#             # and number_of_clusters in which the Kmeans model will divide the whole data into.
-#             X=kmeans.create_clusters(X,number_of_clusters)
-#
-#             # add the target column to the clustered data as target column was dropped above
-#             X['Labels']=Y
-#
-#             # getting the name of each unique cluster from our dataset
-#             list_of_clusters=X['Cluster'].unique()
-#
-#
-#             """parsing all the clusters and looking for the best ML algorithm to fit on individual cluster"""
-#
-#             for i in list_of_clusters: # list_of_clusters computed above.
-#
-#                 cluster_data=X[X['Cluster']==i] # cluster_data represents data for each cluster "i".
-#
-#                 # Prepare the feature and Label columns
-#
-#                 # This is the input data for each cluster consisting of all input independent features.
-#                 # target columns and cluster no. column not included in input data.
-#                 cluster_features=cluster_data.drop(['Labels','Cluster'],axis=1)
-#
-#                 # target column for each cluster's data.
-#                 cluster_label= cluster_data['Labels']
-#
-#                 # splitting the data into training and test set for each cluster one by one
-#                 # cluster_features and cluster_label represent input columns and output columns respectively.
-#                 x_train, x_test, y_train, y_test = train_test_split(cluster_features, cluster_label, test_size=1 / 3, random_state=355)
-#
-#
-#                 # Proceeding with more data pre-processing steps
-#                 # preprocessor object initialized above is object of Preprocessor class.
-#                 # ctrl+click for details of scale_numerical_columns feature.
-#
-#                 # This is done wrt. each cluster within this respective for loop of clusters.
-#                 x_train = preprocessor.scale_numerical_columns(x_train)
-#                 x_test = preprocessor.scale_numerical_columns(x_test)
-#
-#                 # tuner.py file imported above from best_model_finder folder in root directory.
-#                 # Model_Finder class imported from tuner.py takes the below 2 arguements which were passed
-#                 # which were passed in objects of other classes above too.
-#                 # Same logging done in "Training_Logs/ModelTrainingLog.txt".
-#
-#                 # This is done wrt. each cluster within this respective for loop of clusters.
-#                 model_finder=tuner.Model_Finder(self.file_object,self.log_writer) # object initialization
-#
-#                 # getting the best model for each of the clusters
-#                 # go through below function get_best_model() by ctrl+click.
-#                 # best model along with it's name is returned.
-#
-#                 # This is done wrt. each cluster within this respective for loop of clusters.
-#                 # It finds best model for each cluster
-#                 best_model_name,best_model=model_finder.get_best_model(x_train,y_train,x_test,y_test)
-#
-#                 # saving the best model for each cluster to the directory.
-#                 # File_Operation() class imported from file_methods.py file in the file_operations folder in root dir.
-#                 file_op = file_methods.File_Operation(self.file_object,self.log_writer)
-#
-#                 # using save_model() function of File_Operation class, we save this model in the models folder
-#                 # in the models folder of root directory and the path to this models folder is passed in that class itslef
-#                 # in the file_methods.py file.
-#
-#                 # So we save model for each cluster inside different sub-folders of models folder in root dir and names
-#                 # of those sub-folders is name of model + str(cluster no.)
-#                 # As of now for our current data, we have got only 2 clusters 0 and 1.
-#                 # We will be saving model selected for each cluster as explained below.
-#                 # e.g. SVM1 means SVM model selected
-#                 # for 1st cluster, XGBoost0 means XGBoost model was selected for 0th cluster.
-#                 # code for the same written below as best_model_name+str(i).
-#
-#                 save_model = file_op.save_model(best_model, best_model_name+str(i))
-#
-#             # logging the successful Training
-#             self.log_writer.log(self.file_object, 'Successful End of Training')
-#             self.file_object.close()
+            # This below function Divides the data into clusters and no. of clusters were computed by the above
+            # function .elbow_plot() which are passed in the below function as arguement.
+            # ctrl+click for explanation for below function create_clusters() which saves kmeans model
+            # in the in the subfolders of models folder in root dir and returns the data which has additional
+            # column named Clusters which has cluster no. of each row
+
+            """We are saving the clustered data and model bcoz later on when new data records from client comes to us,
+               model will help us classify that new records/rows into clusters we made just now so that we can apply
+               specific model to these clusters."""
+
+            # Calling this below function create_clusters() not only trains a Kmeans model and divides our data into clusters
+            # but also saves the same Kmeans model in the models folder in the root directory.
+
+
+
+            # number_of_clusters in which we will divide data will be selected as per elbow method which is our e.g. is 2.
+            # below function .create_clusters() takes input X i.e. all independent input features which are to be clustered
+            # and number_of_clusters in which the Kmeans model will divide the whole data into.
+
+            X = preprocessor.scale_numerical_columns(X)
+            X = kmeans.create_clusters(X, number_of_clusters)
+
+            # add the target column to the clustered data as target column was dropped above
+            X['Labels'] = Y
+
+            # getting the name of each unique cluster from our dataset
+            list_of_clusters = X['Cluster'].unique()
+
+
+            """parsing all the clusters and looking for the best ML algorithm to fit on individual cluster"""
+
+            for i in list_of_clusters: # list_of_clusters computed above.
+
+                cluster_data=X[X['Cluster'] == i] # cluster_data represents data for each cluster "i".
+
+                # Prepare the feature and Label columns
+
+                # This is the input data for each cluster consisting of all input independent features.
+                # target columns and cluster no. column not included in input data.
+                cluster_features=cluster_data.drop(['Labels','Cluster'],axis=1)
+
+                # target column for each cluster's data.
+                cluster_label = cluster_data['Labels']
+
+
+
+                # splitting the data into training and test set for each cluster one by one
+                # cluster_features and cluster_label represent input columns and output columns respectively.
+                x_train, x_test, y_train, y_test = train_test_split(cluster_features, cluster_label, test_size=1 / 3, random_state=355)
+
+
+                # Proceeding with more data pre-processing steps
+                # preprocessor object initialized above is object of Preprocessor class.
+                # ctrl+click for details of scale_numerical_columns feature.
+
+                # This is done wrt. each cluster within this respective for loop of clusters.
+                # x_train = preprocessor.scale_numerical_columns(x_train)
+                # x_test = preprocessor.scale_numerical_columns(x_test)
+
+                # tuner.py file imported above from best_model_finder folder in root directory.
+                # Model_Finder class imported from tuner.py takes the below 2 arguements which were passed
+                # which were passed in objects of other classes above too.
+                # Same logging done in "Training_Logs/ModelTrainingLog.txt".
+
+                # This is done wrt. each cluster within this respective for loop of clusters.
+                model_finder=tuner.Model_Finder(self.file_object,self.log_writer) # object initialization
+
+                # getting the best model for each of the clusters
+                # go through below function get_best_model() by ctrl+click.
+                # best model along with it's name is returned.
+
+                # This is done wrt. each cluster within this respective for loop of clusters.
+                # It finds best model for each cluster
+                best_model_name, best_model, best_model_score = model_finder.get_best_model(x_train,y_train,x_test,y_test)
+
+                # saving the best model for each cluster to the directory.
+                # File_Operation() class imported from file_methods.py file in the file_operations folder in root dir.
+                file_op = file_methods.File_Operation(self.file_object,self.log_writer)
+
+                # using save_model() function of File_Operation class, we save this model in the models folder
+                # in the models folder of root directory and the path to this models folder is passed in that class itslef
+                # in the file_methods.py file.
+
+                # So we save model for each cluster inside different sub-folders of models folder in root dir and names
+                # of those sub-folders is name of model + str(cluster no.)
+                # As of now for our current data, we have got only 2 clusters 0 and 1.
+                # We will be saving model selected for each cluster as explained below.
+                # e.g. SVM1 means SVM model selected
+                # for 1st cluster, XGBoost0 means XGBoost model was selected for 0th cluster.
+                # code for the same written below as best_model_name+str(i).
+
+                save_model = file_op.save_model(best_model, best_model_name+str(i))
+
+                print(f"Best model selected is {best_model_name} with an accuracy of {100*best_model_score} %")
+
+
+
+            # logging the successful Training
+            self.log_writer.log(self.file_object, 'Successful End of Training')
+            self.file_object.close()
 
         except Exception as e:
             # logging the unsuccessful Training

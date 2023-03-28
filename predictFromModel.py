@@ -101,65 +101,63 @@ class prediction:
             # ctrl+click for explain both below methods, it selects categorical columns out of whole data and encodes.
             data = preprocessor.encode_categorical_columns(data)
 
-            data.to_csv(
-                r"C:\Users\Anshdeep\OneDrive\Desktop\Ineuron\Full stack data science course\Python projects\fraudDetection\EDA\trials\df_preprocessed_pred_3.csv")
+            data = preprocessor.scale_numerical_columns(data)
 
-            #data = preprocessor.scale_numerical_columns(data)
 
-            # # File_Operation class in file_methods.py file_operations folder in root dir has all methods
-            # # to load, save models or function to select best model for each cluster as per cluster no.
-            # # path of models\ folder in root dir already passed in that class itself.
-            #
-            # """Just recall that this file predictFromModel.py is the prediction counterpart of trainingModel.py file in the root
-            #    directory of this project. In that file, KMeansClustering class was imported from clustering.py file which is in
-            #    the data_preprocessing folder in the root dir and that KmeansClustering class methods were used to create Kmeans
-            #    model which divided whole data into clusters and on each cluster, separate models like XGboost and SVC were trained.
-            #
-            #    In the methods of that KmeansClustering class, we not only divided data into clusters, but also saved the Kmeans
-            #    clustering model into the models folder in the root dir.
-            #
-            #    So we are calling that already trained and saved Kmeans clustering model below.
-            #    """
-            # file_loader=file_methods.File_Operation(self.file_object,self.log_writer)
-            # kmeans=file_loader.load_model('KMeans')
-            #
-            # data.to_csv(r"C:\Users\Anshdeep\OneDrive\Desktop\Ineuron\Full stack data science course\Python projects\fraudDetection\EDA\Kmeans_pediction_input.csv")
-            # ## Code changed
-            #
-            # clusters=kmeans.predict(data) # it predicts cluster no. of each row/record.
-            # data['clusters']=clusters # new column for cluster no. of each row/record is made.
-            # clusters=data['clusters'].unique()
-            # predictions=[] # empty list for predictions initialized.
-            # for i in clusters:
-            #     cluster_data= data[data['clusters']==i] # filtered dataframe of each and every cluster
-            #     cluster_data = cluster_data.drop(['clusters'],axis=1) # drop cluster no. column as we will send this data
-            #                                                           # for prediction.
-            #     # file_loader was object of File_Operation class in file_methods.py in file_operations folder
-            #     # as was initialized above. it selects the correct model based on cluster number.
-            #     # e.g. is cluster no. is 0, it fetches model saved inside XGBoost0 and if cluster no. is 1,
-            #     # it fetches model saved inside XGBoost1.
-            #
-            #     model_name = file_loader.find_correct_model_file(i)
-            #     model = file_loader.load_model(model_name) # we load the selected model.
-            #
-            #     result=(model.predict(cluster_data)) # for binary classif, we have 0 and 1
-            #     for res in result:
-            #         if res==0:
-            #             predictions.append('N') # 0 means not fraud "N".
-            #         else:
-            #             predictions.append('Y') # else yes fraud "Y".
-            #
-            # # a dataframe of predictions saved in Prediction_Output_File in root dir
-            # # this csv has only row index no. and Y or N, but we can save Y and N predicted target row by concatenating them
-            # # with all columns also, but that is done according to client requirements or not.
-            # final= pd.DataFrame(list(zip(predictions)),columns=['Predictions'])
-            # path="Prediction_Output_File/Predictions.csv"
-            # final.to_csv("Prediction_Output_File/Predictions.csv",header=True,mode='a+') #appends result to prediction file
-            # self.log_writer.log(self.file_object,'End of Prediction')
+
+            # File_Operation class in file_methods.py file_operations folder in root dir has all methods
+            # to load, save models or function to select best model for each cluster as per cluster no.
+            # path of models\ folder in root dir already passed in that class itself.
+
+            """Just recall that this file predictFromModel.py is the prediction counterpart of trainingModel.py file in the root
+               directory of this project. In that file, KMeansClustering class was imported from clustering.py file which is in
+               the data_preprocessing folder in the root dir and that KmeansClustering class methods were used to create Kmeans
+               model which divided whole data into clusters and on each cluster, separate models like XGboost and SVC were trained.
+
+               In the methods of that KmeansClustering class, we not only divided data into clusters, but also saved the Kmeans
+               clustering model into the models folder in the root dir.
+
+               So we are calling that already trained and saved Kmeans clustering model below.
+               """
+            file_loader=file_methods.File_Operation(self.file_object,self.log_writer)
+            kmeans=file_loader.load_model('KMeans')
+
+            ## Code changed
+
+            clusters=kmeans.predict(data) # it predicts cluster no. of each row/record.
+            data['clusters']=clusters # new column for cluster no. of each row/record is made.
+            clusters=data['clusters'].unique()
+            predictions=[] # empty list for predictions initialized.
+            for i in clusters:
+                cluster_data= data[data['clusters']==i] # filtered dataframe of each and every cluster
+                cluster_data = cluster_data.drop(['clusters'],axis=1) # drop cluster no. column as we will send this data
+                                                                      # for prediction.
+                # file_loader was object of File_Operation class in file_methods.py in file_operations folder
+                # as was initialized above. it selects the correct model based on cluster number.
+                # e.g. is cluster no. is 0, it fetches model saved inside XGBoost0 and if cluster no. is 1,
+                # it fetches model saved inside XGBoost1.
+
+                model_name = file_loader.find_correct_model_file(i)
+                model = file_loader.load_model(model_name) # we load the selected model.
+
+                result=(model.predict(cluster_data)) # for binary classif, we have 0 and 1
+                for res in result:
+                    if res==0:
+                        predictions.append('N') # 0 means not fraud "N".
+                    else:
+                        predictions.append('Y') # else yes fraud "Y".
+
+            # a dataframe of predictions saved in Prediction_Output_File in root dir
+            # this csv has only row index no. and Y or N, but we can save Y and N predicted target row by concatenating them
+            # with all columns also, but that is done according to client requirements or not.
+            final= pd.DataFrame(list(zip(predictions)),columns=['Predictions'])
+            path="Prediction_Output_File/Predictions.csv"
+            final.to_csv("Prediction_Output_File/Predictions.csv",header=True,mode='a+') #appends result to prediction file
+            self.log_writer.log(self.file_object,'End of Prediction')
         except Exception as ex:
             self.log_writer.log(self.file_object, 'Error occured while running the prediction!! Error:: %s' % ex)
             raise ex
-        #return path
+        return path
 
 
 

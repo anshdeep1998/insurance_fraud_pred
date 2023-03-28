@@ -1,0 +1,46 @@
+####################NOw we begin with UI frontend part############################
+
+When after installation of all the libraries, we run main.py, it gives URL as http://127.0.0.1:5001/ and if we open this url in browser or simply click on this URL in pycharm, the default
+method passed by web browser is GET.
+
+Now just have a look at the home route in the main.py.
+
+By default clicking/opening the URL and not passing anything after the rightmost "/" in the http://127.0.0.1:5001/ calls the home route below i.e. it renders the index.html browser
+template for opening the UI.
+
+@app.route("/", methods=['GET'])
+@cross_origin()
+def home():
+    return render_template('index.html')
+
+render_template() is an inbuilt Flask method which looks for the .html file inside the templates folder in the root directory. Flask always looks for html files in templates folder.
+
+clicking on Predict button on frontend prints path of directory where prediction csv file is saved in our system and that's how our project runs successfully now.
+
+And in our proj, all predictions are saved in Predictions.csv in the Prediction_Output_File folder in root dir.
+
+Go through each and every comment inside file main.py which says it has 3 types of routes i.e. home route which calls the web UI i.e. index.html page, then prediction route which is called at the time of prediction and the the training route which trains our model on the
+latest aggregated data.
+
+Going through each and every comment, we get explanation and also know which class and how and where used to make predictions and training.
+
+Clicking on url calls home route and clicking on frontend button calls prediction route which is explained well here in comments.
+
+ From frontend, we can only call home route, so We will test the train and predict routes in postman now and steps for them are writen in main.py file in the end.
+
+########################################
+
+To test these trainRouteClient() and predictRouteClient(), we have made a file trial_main.py in root dir in which path for Training_Batch_Files and Prediction_Batch files are passed manually for validation and then respective prediction and training.
+
+Running trial_main.py trains model and makes prediction. This file was mde by me separately for debugging as we were facing 2 kinds of bugs:
+
+1) in preprocessing.py in data_preprocessing folder, missing values in categorical column was filled with most frequent values but column police_report_available had equal no. of categorical labels, so a model was trained for that column to fill missing values and class for training i.e. model_police_report_available that model was written in the
+police_report_available_model.py in the models_for_missing_values folder in root dir whih was called in preprocessng.py to fill missing values for this column.
+This custom class was made by me to fill missing values and step by step explanation of this file class is done in jupyter files inside folder named Jupyter files missing model testing
+inside the models_for_missing_values folder in root dir.
+
+2) 2nd bug was that kmeans trained for clustering data in trainingModel.py file couldn't identify the order of prediction data columns to cluster and it happened bcoz problem was there in the scaling of numeric features as in training file, it was done after training and saving Kmeans clustering model and in prediction file, it was done before using the already daved Kmeans clustering model which was trained in training file and since scaling changes order of columns, when we loaded saved trained Kmeans model, it could not identify order of columns.
+
+# So the solution was to shift the scaling process before the clustering in training file such that it is trained to cluster already scaled data so that it can cluster easily the prediction data.
+
+All the step by step debugging explanation of this is given in trials folder in EDA folder in root dir.

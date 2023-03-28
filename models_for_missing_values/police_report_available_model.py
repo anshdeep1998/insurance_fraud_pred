@@ -10,41 +10,77 @@ import pickle
 
 
 class model_police_report_available:
-    def __init__(self, data_path, model_save_path):
+    def __init__(self, data_path, model_save_path, file_object, logger_object):
         self.data_path = data_path
         self.data_missing_values = pd.read_csv(data_path)
         self.model_save_path = model_save_path
+        self.file_object = file_object
+        self.logger_object = logger_object
 
     def X_features(self):
-        Missing_model_X = self.data_missing_values.drop(['police_report_available'], axis=1)
-        imputer = CategoricalImputer(imputation_method='frequent')
-        Missing_model_X['collision_type'] = imputer.fit_transform(Missing_model_X[['collision_type']])
-        Missing_model_X['property_damage'] = imputer.fit_transform(Missing_model_X[['property_damage']])
-        return Missing_model_X
+        self.logger_object.log(self.file_object, 'This is to get independent input features for model to fill missing values')
+
+        try:
+            Missing_model_X = self.data_missing_values.drop(['police_report_available'], axis=1)
+            imputer = CategoricalImputer(imputation_method='frequent')
+            Missing_model_X['collision_type'] = imputer.fit_transform(Missing_model_X[['collision_type']])
+            Missing_model_X['property_damage'] = imputer.fit_transform(Missing_model_X[['property_damage']])
+            return Missing_model_X
+
+        except Exception as e:
+            self.logger_object.log(self.file_object,
+                                   'Exception occured in getting independent input features for model to fill missing values. Exception message:  ' + str(
+                                       e))
+            self.logger_object.log(self.file_object,
+                                   'getting independent input features for model to fill missing valuesis  Unsuccessful. Exited the X_features method of the model_police_report_available class')
+            raise Exception()
 
     def Y_features(self):
-        Missing_model_Y = self.data_missing_values['police_report_available']
-        return Missing_model_Y
+        self.logger_object.log(self.file_object,
+                               'This is to get dependent output feature for model to fill missing values')
+        try:
+            Missing_model_Y = self.data_missing_values['police_report_available']
+            return Missing_model_Y
+
+        except Exception as e:
+            self.logger_object.log(self.file_object,
+                                   'Exception occured in getting dependent output feature for model to fill missing values. Exception message:  ' + str(
+                                       e))
+            self.logger_object.log(self.file_object,
+                                   'getting dependent output feature for model to fill missing values is  Unsuccessful. Exited the Y_features method of the model_police_report_available class')
+            raise Exception()
 
     def encoding(self):
-        Missing_model_X = self.X_features()
-        cat_df = Missing_model_X.select_dtypes(include=['object']).copy()
-        cat_df['policy_csl'] = cat_df['policy_csl'].map({'100/300': 1, '250/500': 2.5, '500/1000': 5})
-        cat_df['insured_education_level'] = cat_df['insured_education_level'].map(
-            {'JD': 1, 'High School': 2, 'College': 3, 'Masters': 4, 'Associate': 5, 'MD': 6, 'PhD': 7})
-        cat_df['incident_severity'] = cat_df['incident_severity'].map(
-            {'Trivial Damage': 1, 'Minor Damage': 2, 'Major Damage': 3, 'Total Loss': 4})
-        cat_df['insured_sex'] = cat_df['insured_sex'].map({'FEMALE': 0, 'MALE': 1})
-        cat_df['property_damage'] = cat_df['property_damage'].map({'NO': 0, 'YES': 1})
-        # cat_df['police_report_available'] = cat_df['police_report_available'].map({'NO' : 0, 'YES' : 1})
-        cat_df['fraud_reported'] = cat_df['fraud_reported'].map({'N': 0, 'Y': 1})
+        self.logger_object.log(self.file_object,
+                               'This is to encode categorical features for model to fill missing values')
+        try:
+            Missing_model_X = self.X_features()
+            cat_df = Missing_model_X.select_dtypes(include=['object']).copy()
+            cat_df['policy_csl'] = cat_df['policy_csl'].map({'100/300': 1, '250/500': 2.5, '500/1000': 5})
+            cat_df['insured_education_level'] = cat_df['insured_education_level'].map(
+                {'JD': 1, 'High School': 2, 'College': 3, 'Masters': 4, 'Associate': 5, 'MD': 6, 'PhD': 7})
+            cat_df['incident_severity'] = cat_df['incident_severity'].map(
+                {'Trivial Damage': 1, 'Minor Damage': 2, 'Major Damage': 3, 'Total Loss': 4})
+            cat_df['insured_sex'] = cat_df['insured_sex'].map({'FEMALE': 0, 'MALE': 1})
+            cat_df['property_damage'] = cat_df['property_damage'].map({'NO': 0, 'YES': 1})
+            # cat_df['police_report_available'] = cat_df['police_report_available'].map({'NO' : 0, 'YES' : 1})
+            cat_df['fraud_reported'] = cat_df['fraud_reported'].map({'N': 0, 'Y': 1})
 
-        for col in cat_df.drop(
-                columns=['policy_csl', 'insured_education_level', 'incident_severity', 'insured_sex', 'property_damage',
-                         'fraud_reported']).columns:
-            cat_df = pd.get_dummies(cat_df, columns=[col], prefix=[col], drop_first=True)
+            for col in cat_df.drop(
+                    columns=['policy_csl', 'insured_education_level', 'incident_severity', 'insured_sex', 'property_damage',
+                             'fraud_reported']).columns:
+                cat_df = pd.get_dummies(cat_df, columns=[col], prefix=[col], drop_first=True)
 
-        return cat_df
+            return cat_df
+
+        except Exception as e:
+            self.logger_object.log(self.file_object,
+                                   'Exception occured in encoding categorical features for model to fill missing values. Exception message:  ' + str(
+                                       e))
+            raise Exception()
+
+    """The way we have done logging and try-except handling using custom imported logging and exception classes, we can similarly
+       do for below methods also, but not doing to avoid wastage of time as I am already aware about how to do it."""
 
     def prepare_merge_data(self):
         cat_df = self.encoding()

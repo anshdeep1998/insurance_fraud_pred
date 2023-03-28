@@ -13,13 +13,13 @@ os.putenv('LANG', 'en_US.UTF-8')
 os.putenv('LC_ALL', 'en_US.UTF-8')
 
 
-# folderPath = r"C:\Users\Anshdeep\OneDrive\Desktop\Ineuron\Full stack data science course\Python projects\fraudDetection\Training_Batch_Files"
-#
-# train_valObj = train_validation(folderPath)
-# train_valObj.train_validation()
-#
-# trainModelObj = trainModel()
-# trainModelObj.trainingModel()
+folderPath = r"C:\Users\Anshdeep\OneDrive\Desktop\Ineuron\Full stack data science course\Python projects\fraudDetection\Training_Batch_Files"
+
+train_valObj = train_validation(folderPath)
+train_valObj.train_validation()
+
+trainModelObj = trainModel()
+trainModelObj.trainingModel()
 
 prediction_folder_path = r"C:\Users\Anshdeep\OneDrive\Desktop\Ineuron\Full stack data science course\Python projects\fraudDetection\Prediction_Batch_files"
 
@@ -30,5 +30,5 @@ pred = prediction(prediction_folder_path)
 pred.predictionFromModel()
 
 
-# path = pred.predictionFromModel()
-# print("Prediction file created at this path: ", path)
+path = pred.predictionFromModel()
+print("Prediction file created at this path: ", path)

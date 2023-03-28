@@ -11,6 +11,8 @@ new incoming data from client for training purpose.
 
 So we have 2 types of codes in this whole project: one for training and other for prediction.
 
+all those codes which were implemented for training, exactly those same will be implemented for prediction also bcoz for all incoming prediction data, we need to perform same preprocessings and every step so that it can go to model for prediction.
+
 Go through all comments in main.py along with the ctrl+click.
 
 there, pred_validation class in the prediction_Validation_Insertion.py file is imported which does very initial preprocessing like converting '' to "" for insertion into db, empty value replace with NaN, data validation steps and aggregating all data into db and exporting to csv.
@@ -45,22 +47,7 @@ All data sent by client for prediction was sent in batches in the Prediction_Bat
 
 
 
-####################NOw we begin with UI frontend part############################
 
-When after installation of all the libraries, we run main.py, it gives URL as http://127.0.0.1:5001/ and if we open this url in browser or simply click on this URL in pycharm, the default
-method passed by web browser is GET.
-
-Now just have a look at the home route in the main.py.
-
-By default clicking/opening the URL and not passing anything after the rightmost "/" in the http://127.0.0.1:5001/ calls the home route below i.e. it renders the index.html browser
-template for opening the UI.
-
-@app.route("/", methods=['GET'])
-@cross_origin()
-def home():
-    return render_template('index.html')
-
-render_template() is an inbuilt Flask method which looks for the .html file inside the templates folder in the root directory. Flask always looks for html files in templates folder.
 
 
 
