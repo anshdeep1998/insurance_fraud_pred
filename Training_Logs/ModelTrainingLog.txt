@@ -1928,3 +1928,55 @@ KMeans does not accept missing values encoded as NaN natively. For supervised le
 2023-03-28/23:12:48		Entered the save_model method of the File_Operation class
 2023-03-28/23:12:48		Model File XGBoost1 saved. Exited the save_model method of the Model_Finder class
 2023-03-28/23:12:48		Successful End of Training
+2023-03-29/00:54:04		Start of Training
+2023-03-29/00:54:04		Entered the get_data method of the Data_Getter class
+2023-03-29/00:54:04		Data Load Successful.Exited the get_data method of the Data_Getter class
+2023-03-29/00:54:04		Entered the remove_columns method of the Preprocessor class
+2023-03-29/00:54:04		Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2023-03-29/00:54:04		Entered the is_null_present method of the Preprocessor class
+2023-03-29/00:54:04		Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2023-03-29/00:54:04		Entered the impute_missing_values method of the Preprocessor class
+2023-03-29/00:54:04		This is to get dependent output feature for model to fill missing values
+2023-03-29/00:54:04		This is to get dependent output feature for model to fill missing values
+2023-03-29/00:54:05		This is to encode categorical features for model to fill missing values
+2023-03-29/00:54:05		This is to get independent input features for model to fill missing values
+2023-03-29/00:54:05		This is to get dependent output feature for model to fill missing values
+2023-03-29/00:54:30		This is to encode categorical features for model to fill missing values
+2023-03-29/00:54:30		This is to get independent input features for model to fill missing values
+2023-03-29/00:54:30		This is to get dependent output feature for model to fill missing values
+2023-03-29/00:54:30		This is to get dependent output feature for model to fill missing values
+2023-03-29/00:54:31		This is to encode categorical features for model to fill missing values
+2023-03-29/00:54:31		This is to get independent input features for model to fill missing values
+2023-03-29/00:54:31		This is to get dependent output feature for model to fill missing values
+2023-03-29/00:54:31		Imputing missing values Successful. Exited the impute_missing_values method of the Preprocessor class
+2023-03-29/00:54:31		Entered the encode_categorical_columns method of the Preprocessor class
+2023-03-29/00:54:31		encoding for categorical values successful. Exited the encode_categorical_columns method of the Preprocessor class
+2023-03-29/00:54:31		Entered the separate_label_feature method of the Preprocessor class
+2023-03-29/00:54:31		Label Separation Successful. Exited the separate_label_feature method of the Preprocessor class
+2023-03-29/00:54:31		Entered the elbow_plot method of the KMeansClustering class
+2023-03-29/00:54:32		The optimum number of clusters is: 2 . Exited the elbow_plot method of the KMeansClustering class
+2023-03-29/00:54:32		Entered the scale_numerical_columns method of the Preprocessor class
+2023-03-29/00:54:32		scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2023-03-29/00:54:32		Entered the create_clusters method of the KMeansClustering class
+2023-03-29/00:54:32		Entered the save_model method of the File_Operation class
+2023-03-29/00:54:32		Model File KMeans saved. Exited the save_model method of the Model_Finder class
+2023-03-29/00:54:32		succesfully created 2clusters. Exited the create_clusters method of the KMeansClustering class
+2023-03-29/00:54:32		Entered the get_best_model method of the Model_Finder class
+2023-03-29/00:54:32		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2023-03-29/00:54:41		XGBoost best params: {'criterion': 'gini', 'max_depth': 8, 'n_estimators': 100}. Exited the get_best_params_for_xgboost method of the Model_Finder class
+2023-03-29/00:54:41		AUC for XGBoost:1.0
+2023-03-29/00:54:41		Entered the get_best_params_for_svm method of the Model_Finder class
+2023-03-29/00:55:04		SVM best params: {'C': 0.1, 'kernel': 'rbf', 'random_state': 0}. Exited the get_best_params_for_svm method of the Model_Finder class
+2023-03-29/00:55:04		AUC for SVM:0.5
+2023-03-29/00:55:04		Entered the save_model method of the File_Operation class
+2023-03-29/00:55:04		Model File XGBoost1 saved. Exited the save_model method of the Model_Finder class
+2023-03-29/00:55:04		Entered the get_best_model method of the Model_Finder class
+2023-03-29/00:55:04		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2023-03-29/00:55:11		XGBoost best params: {'criterion': 'gini', 'max_depth': 8, 'n_estimators': 100}. Exited the get_best_params_for_xgboost method of the Model_Finder class
+2023-03-29/00:55:11		AUC for XGBoost:1.0
+2023-03-29/00:55:11		Entered the get_best_params_for_svm method of the Model_Finder class
+2023-03-29/00:55:16		SVM best params: {'C': 0.1, 'kernel': 'rbf', 'random_state': 0}. Exited the get_best_params_for_svm method of the Model_Finder class
+2023-03-29/00:55:16		AUC for SVM:0.5
+2023-03-29/00:55:16		Entered the save_model method of the File_Operation class
+2023-03-29/00:55:16		Model File XGBoost0 saved. Exited the save_model method of the Model_Finder class
+2023-03-29/00:55:16		Successful End of Training

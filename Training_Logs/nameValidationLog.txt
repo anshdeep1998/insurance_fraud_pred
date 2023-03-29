@@ -102,3 +102,4 @@
 2023-03-25/20:42:52		Valid File name!! File moved to GoodRaw Folder :: fraudDetection_021119920_010222.csv
 2023-03-28/23:11:43		Valid File name!! File moved to GoodRaw Folder :: fraudDetection_021119920_010222.csv
 2023-03-29/00:21:26		Valid File name!! File moved to GoodRaw Folder :: fraudDetection_021119920_010222.csv
+2023-03-29/00:54:03		Valid File name!! File moved to GoodRaw Folder :: fraudDetection_021119920_010222.csv
